@@ -9,13 +9,15 @@ const UserSchema = new Schema(
     posts: [
       {
         type: Schema.Types.ObjectId,
-        ref: "Post"
+        ref: "Post",
+        required: true
       }
     ],
     comments: [
       {
         type: Schema.Types.ObjectId,
-        ref: "Comment"
+        ref: "Comment",
+        required: true
       }
     ]
   },

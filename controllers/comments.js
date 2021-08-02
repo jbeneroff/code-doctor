@@ -5,9 +5,9 @@ import Post from '../models/post.js'
 export const getAllComments = async (req, res) => {
 
   try {
-    const user = await User.find().populate('users')
-    const post = await Post.find().populate('posts')
-    const comments = await Comment.find({ postId: req.post, userId: req.user })
+    // const user = await User.find().populate('user_id')
+    // const post = await Post.find().populate('post_id')
+    const comments = await Comment.find({}).populate('post_id')
     res.send(comments)
   } catch (e) {
     res.status(500).json({error: e.message})
@@ -17,8 +17,8 @@ export const getAllComments = async (req, res) => {
 export const createComment = async (req, res) => {
   
   try {
-    const user = await User.find().populate('users')
-    const post = await Post.find().populate('posts')
+    // const user = await User.find({}).populate('user_id')
+    // const post = await Post.find({}).populate('post_id')
     const comment = new Comment(req.body)
     comment.postId = req.post
     comment.userId = req.user
