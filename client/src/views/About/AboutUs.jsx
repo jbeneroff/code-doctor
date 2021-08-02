@@ -10,7 +10,7 @@ export default function AboutUs() {
       <div className="description">
         <h1>Who we are</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vero quae assumenda minima quod animi commodi. Voluptates molestias porro perspiciatis? Dignissimos quia vitae quasi ea dolor dicta blanditiis eligendi sequi.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint modi excepturi mollitia molestiae saepe illo deserunt fugiat, itaque,inventore ipsa assumenda blanditiis? In accusantium mollitia voluptate voluptates tempora consequatur!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint modi excepturi mollitia molestiae saepe illo deserunt fugiat, md vm itaque,inventore ipsa assumenda blanditiis? In accusantium mollitia voluptate voluptates tempora consequatur!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorum, reiciendis corporis debitis deserunt porro aliquam explicabo mollitia, voluptatibus expedita doloremque? Sequi consectetur omnis eligendi nisi eveniet repudiandae, harum minus.
         </p>
 
