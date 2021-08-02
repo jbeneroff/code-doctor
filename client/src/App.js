@@ -9,6 +9,7 @@ import PostDetails from './views/PostDetails/PostDetails';
 import SignIn from './views/SignIn/SignIn';
 import SignUp from './views/SignUp/SignUp';
 import User from './views/User/User';
+import AboutUs from "./views/About/AboutUs"
 
 function App() {
   const [user, setUser] = useState(null)
@@ -42,6 +43,9 @@ function App() {
       </Route>
       <Route path="/posts/:id">
         <PostDetails />
+      </Route>
+      <Route path="/about">
+        <AboutUs />
       </Route>
     </div>
   );
