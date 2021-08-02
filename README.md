@@ -56,13 +56,13 @@ A forum for all things coding/programming/development. Users can create accounts
 
 -  6 separate components 
 - Use only React for DOM Manipulation.
-- Authentication!
+- Authentication
 - Landing Screen
 - Listing Screen
 - Detail Screen
 
 #### Server (Back End)
-- Authentication!
+- Authentication
 
 #### Styling
 - Be styled with CSS.
