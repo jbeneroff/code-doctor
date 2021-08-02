@@ -95,6 +95,7 @@ A forum for all things coding/programming/development. Users can create accounts
 
 ## Wire Frame
 
+
 ## Timeframe
 
 | Component                              | Priority | Estimated Time | Time Invested | Actual Time |
@@ -123,7 +124,7 @@ A forum for all things coding/programming/development. Users can create accounts
 
 | Day        | Deliverable                                          | Status   |
 | ---------- | ---------------------------------------------------- | -------- |
-| July 30    | Project Ideas/ README.md   | Incomplete |
+| July 30    | Project Ideas/ README.md   | Complete |
 | Aug 2    | README/ Proposal | Incomplete |
 | Aug 3    | PseudoCode/Coding                 | Incomplete |
 | Aug 4   |  Coding/MVP                                               | Incomplete |
