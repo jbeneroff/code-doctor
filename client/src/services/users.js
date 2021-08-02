@@ -11,3 +11,27 @@ export const signUp = async (credentials) => {
     throw e;
   }
 };
+
+export const signIn = async () => {
+  try {
+
+  } catch (e) {
+    throw e;
+  }
+};
+
+export const signOut = async () => {
+  try {
+
+  } catch (e) {
+    throw e;
+  }
+};
+
+export const verify = async () => {
+  try {
+
+  } catch (e) {
+    throw e;
+  }
+};
