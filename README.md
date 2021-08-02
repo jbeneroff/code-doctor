@@ -20,7 +20,7 @@ const  PostSchema= new Schema(
     title: {type: String, required: true},
     userId: {type: Schema.Types.ObjectId, ref: 'User'},
     content: {type: String, required: true}
-  }, {timestamps: true})
+  }, {timestamps: true}
 )
 ```
 Comment
@@ -30,7 +30,7 @@ const CommentSchema = new Schema(
     userId: {type: Schema.Types.Object, ref: 'User'},
     postId: {type: Schema.Types.ObjectId, ref: 'Post'},
     content: {type: String, required: true}
-   }, {timestamps: true})
+   }, {timestamps: true}
 )
 ```
 
