@@ -27,7 +27,7 @@ Comment
 ```
 const CommentSchema = new Schema(
   {
-    userId: {type:Schema.Types.Object, ref: 'User'},
+    userId: {type: Schema.Types.Object, ref: 'User'},
     postId: {type: Schema.Types.ObjectId, ref: 'Post'},
     content: {type: String, required: true}
    }, {timestamps: true})
@@ -47,11 +47,13 @@ A forum for all things coding/programming/development. Users can create accounts
 
 ## MVP
 - Front End: React App, CRUD for posts and comments, sign-in/sign-up for users.
+- Front End: Home page, all posts for user, single post with comments + update/delete, create new post.
 - Back End: MongoDB, Mongoose, Express, CRUD for posts and comments, sign-in/sign-up for users.
 - Authentication/ Authorization
 
 ## PMVP
 - code snippets in posts and comments.
+- search bar for all posts
 
 
 
