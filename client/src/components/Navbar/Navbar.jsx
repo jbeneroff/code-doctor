@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { signOut } from "../../services/users.js"
 
-export default function Navbar() {
+export default function Navbar(props) {
 
   const handleSignOut = () => {
     signOut()

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
+import { verify } from './services/users';
 import AllPosts from './views/AllPosts/AllPosts';
 import Home from './views/Home/Home';
 import NewPost from './views/NewPost/NewPost';
