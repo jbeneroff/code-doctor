@@ -93,5 +93,42 @@ A forum for all things coding/programming/development. Users can create accounts
 - voting system for comments
 - user can mark a comment as 'Answer'
 
-- First Commit - Kheyyon P.
+## Wire Frame
+
+## Timeframe
+
+| Component                              | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Project Proposal and Approval          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Building Airtable Elements             |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Basic React App Structure              |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Navbar                                 |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Article List Component                 |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Article Details Component              |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Forms                                  |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Delete Function                        |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Debugging                              |    H     |      4hrs      |     4hrs      |    4hrs     |
+| Basic CSS Component Styling            |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Advanced CSS Styling                   |    H     |      6hrs      |     6hrs      |    6hrs     |
+| Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
+| PMVP: Light/Dark Mode                  |    M     |      3hrs      |     1hrs      |    1hrs     |
+| PMVP: Live Search                      |    M     |      3hrs      |     3hrs      |    3hrs     |
+| PMVP: Delete Requires Password         |    M     |      3hrs      |     3hrs      |    3hrs     |
+| PMVP: Voting System                    |    M     |      3hrs      |     0hrs      |    0hrs     |
+| PMVP: Adding External API w/ Component |    M     |      3hrs      |     0hrs      |    0hrs     |
+| Total |    H     |     47hrs      |     34hrs     |    34hrs    |
+
+## Weekly Breakdown
+
+| Day        | Deliverable                                          | Status   |
+| ---------- | ---------------------------------------------------- | -------- |
+| July 30    | Project Ideas/ README.md   | Incomplete |
+| Aug 2    | README/ Proposal | Incomplete |
+| Aug 3    | PseudoCode/Coding                 | Incomplete |
+| Aug 4   |  Coding/MVP                                               | Incomplete |
+| Aug 5    | MVP                                           | Incomplete |
+| Aug 6 | MVP/PMVP                                                 | Incomplete |
+| Aug 9    | PMVP                                       | Incomplete |
+| Aug 10    | Presentations                                        | Incomplete |
+
 
