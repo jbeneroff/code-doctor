@@ -99,21 +99,24 @@ A forum for all things coding/programming/development. Users can create accounts
 
 | Component                              | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Proposal and Approval          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Front End Components          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Front End Views          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Front End Services        |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Front End Routes          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Back End Database          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Back End Authentication/Authorization         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Front End Authentication/Authorization         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Back End Models         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Back End Controllers          |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Back End Routes         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| PMVP code snippets         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| PMVP Search bar         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| PMVP voting system         |    H     |      3hrs      |     3hrs      |    3hrs     |
-| PMVP mark comments as answer         |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Project Proposal and Approval          |    H     |      6hrs      |           |        |
+| Front End Components          |    H     |      3hrs      |           |         |
+| Front End Views          |    H     |      3hrs      |           |         |
+| Front End Services        |    H     |      3hrs      |          |         |
+| Front End Routes          |    H     |      3hrs      |           |         |
+| Back End Database          |    H     |      3hrs      |           |         |
+| Back End Authentication/Authorization         |    H     |      3hrs      |          |       |
+| Front End Authentication/Authorization         |    H     |      3hrs      |           |        |
+| Back End Models         |    H     |      3hrs      |           |         |
+| Back End Controllers          |    H     |      3hrs      |          |         |
+| Back End Routes         |    H     |      3hrs      |         |         |
+| CSS styling         |    H     |      6hrs      |         |         |
+| Media Queries        |    H     |      2hrs      |         |         |
+| Debugging        |    H     |      6hrs      |         |         |
+| PMVP code snippets         |    M     |      3hrs      |           |        |
+| PMVP Search bar         |    M     |      3hrs      |          |         |
+| PMVP voting system         |    M     |      3hrs      |         |         |
+| PMVP mark comments as answer         |    M     |      3hrs      |          |         |
 | Total |    H     |           |          |        |
 
 ## Weekly Breakdown
