@@ -1,5 +1,3 @@
-Routes/users
-
 import { Router } from "express"
 import { signUp, signIn, verify } from "../controllers/users.js"
 
