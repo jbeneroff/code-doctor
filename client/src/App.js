@@ -1,23 +1,47 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
+import AllPosts from './views/AllPosts/AllPosts';
+import Home from './views/Home/Home';
+import NewPost from './views/NewPost/NewPost';
+import PostDetails from './views/PostDetails/PostDetails';
+import SignIn from './views/SignIn/SignIn';
+import SignUp from './views/SignUp/SignUp';
+import User from './views/User/User';
 
 function App() {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const verifyUser = async () => {
+      setUser(await verify())
+    }
+    verifyUser()
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route path="/">
+        <Home />
+      </Route>
+      <Route path="/sign-up">
+        <SignUp />
+      </Route>
+      <Route path="/sign-in">
+        <SignIn />
+      </Route>
+      <Route path="/new-post">
+        <NewPost />
+      </Route>
+      <Route path="/user/:id">
+        <User />
+      </Route>
+      <Route path="/posts">
+        <AllPosts />
+      </Route>
+      <Route path="/posts/:id">
+        <PostDetails />
+      </Route>
     </div>
   );
 }

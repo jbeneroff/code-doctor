@@ -15,7 +15,7 @@ const UserSchema = new Schema(
 ```
 Post
 ```
-const  PostSchema= new Schema(
+const  PostSchema = new Schema(
   {
     title: {type: String, required: true},
     userId: {type: Schema.Types.ObjectId, ref: 'User'},
@@ -56,13 +56,13 @@ A forum for all things coding/programming/development. Users can create accounts
 
 -  6 separate components 
 - Use only React for DOM Manipulation.
-- Authentication!
+- Authentication
 - Landing Screen
 - Listing Screen
 - Detail Screen
 
 #### Server (Back End)
-- Authentication!
+- Authentication
 
 #### Styling
 - Be styled with CSS.
@@ -93,5 +93,53 @@ A forum for all things coding/programming/development. Users can create accounts
 - voting system for comments
 - user can mark a comment as 'Answer'
 
-- First Commit - Kheyyon P.
+## Wire Frame
 
+![Home](https://user-images.githubusercontent.com/85003025/127893181-0e220225-ac1d-4a6f-a1d4-ad336d376888.png)
+![CreateNew](https://user-images.githubusercontent.com/85003025/127893190-dc156e3b-b447-43a6-9b1c-ea8908e8d6ee.png)
+![DeletePost](https://user-images.githubusercontent.com/85003025/127893195-9ac0fe2e-9b28-41cc-bfe2-f5e391fde9db.png)
+![Home](https://user-images.githubusercontent.com/85003025/127893201-5c76a8e7-8320-4475-a136-681b3ad1c769.png)
+![SignIn](https://user-images.githubusercontent.com/85003025/127893207-4e6318d1-931b-479b-894c-98c1151c36cc.png)
+![SignUp](https://user-images.githubusercontent.com/85003025/127893216-52c84f67-cfb7-447b-bd72-797d1330f044.png)
+![UpdatePost](https://user-images.githubusercontent.com/85003025/127893222-6788fe22-b3f2-42fd-bdcf-6972e886f219.png)
+![UserProfile](https://user-images.githubusercontent.com/85003025/127893227-01448d03-5c1e-4f4e-8c26-0b02711488e0.png)
+
+
+## Timeframe
+
+| Component                              | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Project Proposal and Approval          |    H     |      6hrs      |           |        |
+| Front End Components          |    H     |      3hrs      |           |         |
+| Front End Views          |    H     |      3hrs      |           |         |
+| Front End Services        |    H     |      3hrs      |          |         |
+| Front End Routes          |    H     |      3hrs      |           |         |
+| Back End Database          |    H     |      3hrs      |           |         |
+| Back End Authentication/Authorization         |    H     |      3hrs      |          |       |
+| Front End Authentication/Authorization         |    H     |      3hrs      |           |        |
+| Back End Models         |    H     |      3hrs      |           |         |
+| Back End Controllers          |    H     |      3hrs      |          |         |
+| Back End Routes         |    H     |      3hrs      |         |         |
+| CSS styling         |    H     |      6hrs      |         |         |
+| Media Queries        |    H     |      2hrs      |         |         |
+| Debugging        |    H     |      6hrs      |         |         |
+| PMVP code snippets         |    M     |      3hrs      |           |        |
+| PMVP Search bar         |    M     |      3hrs      |          |         |
+| PMVP voting system         |    M     |      3hrs      |         |         |
+| PMVP mark comments as answer         |    M     |      3hrs      |          |         |
+| Total |    H     |           |          |        |
+
+## Weekly Breakdown
+
+| Day        | Deliverable                                          | Status   |
+| ---------- | ---------------------------------------------------- | -------- |
+| July 30    | Project Ideas/ README.md   | Complete |
+| Aug 2    | README/ Proposal | Incomplete |
+| Aug 3    | PseudoCode/Coding                 | Incomplete |
+| Aug 4   |  Coding/MVP                                               | Incomplete |
+| Aug 5    | MVP                                           | Incomplete |
+| Aug 6 | MVP/PMVP                                                 | Incomplete |
+| Aug 9    | PMVP                                       | Incomplete |
+| Aug 10    | Presentations                                        | Incomplete |
+
+[https://github.com/users/jbeneroff/projects/1]
