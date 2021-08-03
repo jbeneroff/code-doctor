@@ -50,7 +50,7 @@ export const getComment = async (req, res) => {
     if (comment) {
       res.json(comment)
     } else {
-      res.status(404).json({ error :e.message})
+      res.status(404).json({ error: e.message})
     }
   } catch (e) {
     res.status(500).json({ error: e.message})
