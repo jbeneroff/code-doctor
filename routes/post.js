@@ -2,7 +2,7 @@ import { Router } from 'express'
 import restrict from '../helpers/restrict.js'
 import {getAllPosts, createPost, getPost, updatePost, deletePost} from "../controllers/posts.js"
 
-const router = Router()
+const router = Router({mergeParams: true})
 
 
 router.get('/posts', restrict, getAllPosts)
