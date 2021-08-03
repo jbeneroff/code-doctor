@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from '../../components/Layout/Layout'
 
 export default function NewPost() {
   return (
-    <div>
-      Create New Post
-    </div>
+    <Layout>
+      Create new post
+   </Layout>
   )
 }
