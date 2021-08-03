@@ -21,7 +21,7 @@ export default function NewPost(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createPost(input);
-    history.push("/");
+    history.push("/user/:id");
   };
 
 
