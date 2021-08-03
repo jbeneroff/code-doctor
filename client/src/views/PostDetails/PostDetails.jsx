@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost } from '../../services/posts'
 // import { getComments } from '../../services/comments'
@@ -7,11 +7,11 @@ import { getPost } from '../../services/posts'
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
   const [comments, setComments] = useState([])
-  const { userId } = props.user._id
+  const postId = useParams()
 
   useEffect(() => {
     const fetchPost = async () => {
-      const data = await getPost(userId)
+      const data = await getPost(postId.id)
       setPost(data)
     }
     fetchPost()
@@ -22,6 +22,7 @@ export default function PostDetails(props) {
     const fetchComments = async () => {
       // const data = await getComments(userId)
       // setComments(data)
+      // console.log(props.user)
     }
     fetchComments()
   }, [])
@@ -29,12 +30,14 @@ export default function PostDetails(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
       <h2>{post.title}</h2>
-      {props.user._id === post.userId ? (
+      {/*  */}
+      {props.user === post.userId ? (
         <Link>
           <button>Edit Post</button>
         </Link>
       ) : (null)}
-      <p>{post.user.username}</p>
+      {/* show username associated with post? */}
+      {/* <p>{post.user.username}</p> */}
       <p>{post.content}</p>
       <div>
         {comments.map((comment) => {

@@ -27,3 +27,21 @@ export const createPost = async (input) => {
     throw e;
   }
 };
+
+export const updatePost = async (id, input) => {
+  try {
+    const res = await api.put(`/posts/${id}`, input);
+    return res.data;
+  } catch (e) {
+    throw e;
+  }
+};
+
+export const deletePost = async (id) => {
+  try {
+    const res = await api.post(`/posts/${id}`);
+    return res.data;
+  } catch (e) {
+    throw e;
+  }
+};
