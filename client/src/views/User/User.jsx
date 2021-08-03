@@ -1,9 +1,10 @@
 import React from 'react'
+import Layout from "../../components/Layout/Layout"
 
-export default function User() {
+export default function User(props) {
   return (
-    <div>
-      User Profile
-    </div>
+    <Layout user={props.user} setUser={props.setUser}>
+User Profile
+    </Layout>
   )
 }

@@ -18,12 +18,14 @@ export default function Navbar(props) {
       <Link to="/about">About Us</Link>
       {props.user ? (
         <>
-          <Link>Cre</Link>
+          <div>{props.user?.username}</div>
+          <Link to="/new-post">Create New Post</Link>
           <button onClick={handleSignOut}>Sign Out</button>
         </>
       ) : (
         <div>
           <Link to="/sign-in">Sign In</Link>
+          <Link to="/sign-up">Sign Up</Link>
         </div>
       )}
     </div>

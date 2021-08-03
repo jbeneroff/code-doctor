@@ -1,9 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import Layout from '../../components/Layout/Layout'
 
-export default function AboutUs() {
+export default function AboutUs(props) {
   return (
+    <Layout user={props.user} setUset={props.setUser}>
     <div className="wrapper">
       <h1>About Us</h1>
 
@@ -81,6 +83,7 @@ export default function AboutUs() {
         
       </ul>
       
-    </div>
+      </div>
+      </Layout>
   )
 }

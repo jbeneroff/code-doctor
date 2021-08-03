@@ -25,7 +25,8 @@ export const signIn = async (credentials) => {
 
 export const signOut = async () => {
   try {
-    // is this needed??
+    localStorage.removeItem("token")
+    return true
   } catch (e) {
     throw e;
   }
