@@ -4,7 +4,7 @@ import User from '../models/user.js'
 
 export const getAllPosts = async (req, res) => {
   try {
-    const posts = await Post.find({ userId: req.user })
+    const posts = await Post.find({})
     res.send(posts)
   } catch (e) {
     res.status(500).json({error: e.message})
