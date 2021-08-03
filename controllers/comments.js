@@ -1,11 +1,10 @@
 import Comment from '../models/comment.js'
-import User from '../models/user.js'
 import Post from '../models/post.js'
 
 
 export const getAllComments = async (req, res) => {
   try {
-    const comments = await Comment.find({ userId: req.user })
+    const comments = await Comment.find({ postId: req.user })
     res.send(comments)
   } catch (e) {
     res.status(500).json({error: e.message})
@@ -13,23 +12,19 @@ export const getAllComments = async (req, res) => {
 }
 
 export const createComment = async (req, res) => {
-  try {
-    const comment = new Comment(req.body)
-    comment.userId = req.user
-    await comment.save()
-    const user = await User.findById(req.user)
-    user.comments.push(comment) 
-    await user.save()
-  
-    const post = await Post.findById(req.user)
-    console.log(post) //null
-    console.log(req.params.post)//undefined
-    post.comments.push(comment)
-    await post.save()
-    res.status(201).json(comment)
-  } catch (e) {
-    res.status(500).json({error: e.message})
-  }
+    try {
+      const comment = new Comment(req.body)
+      comment.postId = req.user
+      await comment.save()
+      console.log(comment.postId)
+      const post = await Post.findById(req.user)
+      post.comments.push(comment)
+      await post.save()
+      res.status(201).json(comment)
+    } catch (e) {
+      res.status(500).json({error: e.message})
+    }
+ 
 }
 
 export const getComment = async (req, res) => {

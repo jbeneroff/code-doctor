@@ -17,8 +17,7 @@ export const createPost = async (req, res) => {
     post.userId = req.user
     await post.save()
     const user = await User.findById(req.user)
-   user.posts.push(post) 
-    
+    user.posts.push(post) 
     await user.save()
     res.status(201).json(post)
   } catch (e) {
