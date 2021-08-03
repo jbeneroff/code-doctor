@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
 
-export default function Home() {
+export default function Home(props) {
   return (
-    <Layout>
+    <Layout user={props.user} setUser={props.setUser}>
       <div>
         Homee
       </div>

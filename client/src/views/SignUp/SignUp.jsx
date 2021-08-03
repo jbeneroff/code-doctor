@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 
 export default function SignUp(props) {
   const [input, setInput] = useState({ username: "", email: "", password: "" });
-  const { setUser } = props;
   const history = useHistory();
 
   const handleSubmit = async (e) => {
