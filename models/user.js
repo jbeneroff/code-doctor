@@ -7,16 +7,10 @@ const UserSchema = new Schema(
     email: { type: String, required: true, unique: true },
     password_digest: { type: String, required: true, select: false },
     posts: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Post"
-      }
+      { type: Schema.Types.ObjectId, ref: 'Post' }
     ],
     comments: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Comment"
-      }
+      {type: Schema.Types.ObjectId, ref: 'Comment' }
     ]
   },
   { timestamps: true }

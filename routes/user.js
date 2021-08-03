@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { signUp, signIn, verify, getAllUsers } from "../controllers/users.js"
+import { signUp, signIn, verify, getAllUsers} from "../controllers/users.js"
 
 const router = Router()
 
@@ -11,5 +11,6 @@ router.get('/verify', verify)
 
 router.get('/users', getAllUsers)
 
+// router.get('/users/:id',getUserPosts)
 
 export default router

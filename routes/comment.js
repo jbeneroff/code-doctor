@@ -7,11 +7,11 @@ const router = Router()
 
 router.get('/comments', restrict, getAllComments)
 
-router.get('/comments/:post_id', getComment)
+router.get('/comments/:id', getComment)
 
 router.post('/comments', restrict, createComment)
 
-router.put('/comment/:id', restrict, updateComment)
+router.put('/comments/:id', restrict, updateComment)
 
 router.delete('/comments/:id', restrict, deleteComment)
 
