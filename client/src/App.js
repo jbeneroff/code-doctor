@@ -23,29 +23,29 @@ function App() {
 
   return (
     <div className="App">
-      <Route path="/">
-        <Home />
+      <Route exact path="/">
+        <Home user={user} setUser={setUser} />
       </Route>
       <Route path="/sign-up">
-        <SignUp />
+        <SignUp user={user} setUser={setUser} />
       </Route>
       <Route path="/sign-in">
-        <SignIn />
+        <SignIn user={user} setUser={setUser} />
       </Route>
       <Route path="/new-post">
-        <NewPost />
+        <NewPost user={user} setUser={setUser} />
       </Route>
       <Route path="/user/:id">
-        <User />
+        <User user={user} setUser={setUser} />
       </Route>
       <Route path="/posts">
-        <AllPosts />
+        <AllPosts user={user} setUser={setUser} />
       </Route>
       <Route path="/posts/:id">
-        <PostDetails />
+        <PostDetails user={user} setUser={setUser} />
       </Route>
       <Route path="/about">
-        <AboutUs />
+        <AboutUs user={user} setUser={setUser} />
       </Route>
     </div>
   );
