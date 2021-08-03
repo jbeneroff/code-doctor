@@ -18,11 +18,13 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         {posts.map((post) => {
-          <Link to={`/posts/${post._id}`}>
-            <h3>{post.title}</h3>
-            {/* add in logic for formatting code for pmvp */}
-            <p>{post.content}</p>
-          </Link>
+          return (
+            <Link to={`/posts/${post._id}`}>
+              <h3>{post.title}</h3>
+              {/* add in logic for formatting code for pmvp */}
+              <p>{post.content}</p>
+            </Link>
+          )
         })}
       </Layout>
     </div>

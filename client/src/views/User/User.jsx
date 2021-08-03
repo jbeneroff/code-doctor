@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import Layout from "../../components/Layout/Layout"
 import { getAllPosts } from '../../services/posts'
 
@@ -7,6 +8,7 @@ export default function User(props) {
 
   useEffect(() => {
     const fetchUserPosts = async () => {
+      // how to just get posts from user?
       let data = await getAllPosts()
       setUserPosts(data)
     }
@@ -18,11 +20,13 @@ export default function User(props) {
       <h2>{props.user.username}</h2>
       <h3>{`${props.user.username}'s Posts`}</h3>
       {userPosts.map((post) => {
-        <Link to={`/posts/${post._id}`}>
-          <h3>{post.title}</h3>
-          {/* add in logic for formatting code for pmvp */}
-          <p>{post.content}</p>
-        </Link>
+        return (
+          <Link to={`/posts/${post._id}`}>
+            <h3>{post.title}</h3>
+            {/* add in logic for formatting code for pmvp */}
+            <p>{post.content}</p>
+          </Link>
+        )
       })}
       <h3>{`${props.user.username}'s Comments`}</h3>
     </Layout>

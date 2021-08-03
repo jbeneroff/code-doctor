@@ -10,8 +10,7 @@ export const getAllPosts = async () => {
   }
 };
 
-export const getPost = async () => {
-  const {id} = req.params
+export const getPost = async (id) => {
   try {
     const res = await api.get(`/posts/${id}`);
     return res.data;
