@@ -9,7 +9,7 @@ router.get('/comments', restrict, getAllComments)
 
 router.get('/comments/:id', getComment)
 
-router.post('/comments', restrict, createComment)
+router.post('/comments/:post_id', restrict, createComment)
 
 router.put('/comments/:id', restrict, updateComment)
 

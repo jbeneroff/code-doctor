@@ -13,16 +13,21 @@ export const getAllComments = async (req, res) => {
 }
 
 export const createComment = async (req, res) => {
-  const {id} = req.params
   try {
-
+    const { id } = req.params
+    const comment = new Comment(req.body)
+    
     const user = await User.findById(req.user)
-    const post = await Post.findById(req.post)
+    const post = await Post.findById({ _id: comment.postId })
+    console.log('user:', user)
+    console.log('post:', post)
+    console.log('req.post:', req.post)
+    console.log('id:', id)
 
-    const comment = new Comment(id, req.body)
+    comment.userId = user
+    comment.postId = post
 
-    comment.userId = req.user
-    comment.postId = req.post
+    await comment.save()
 
     user.comments.push(comment)
     await user.save()
@@ -30,7 +35,7 @@ export const createComment = async (req, res) => {
     post.comments.push(comment)
     await post.save()
     
-    await comment.save()
+    
     res.status(201).json(comment)
 
     } catch (e) {
