@@ -7,7 +7,7 @@ const router = Router()
 
 router.get('/comments', restrict, getAllComments)
 
-router.get('/comments/:id', getComment)
+router.get('/comments/:post_id', getComment)
 
 router.post('/comments', restrict, createComment)
 

@@ -15,11 +15,13 @@ export const getAllComments = async (req, res) => {
 }
 
 export const createComment = async (req, res) => {
-  
+  const {id} = req.params
   try {
-    // const user = await User.find({}).populate('user_id')
-    // const post = await Post.find({}).populate('post_id')
-    const comment = new Comment(req.body)
+    const user = await User.findById(userId).populate('user_id')
+    const post = await Post.findById(postId).populate('post_id')
+
+    const comment = new Comment(id, req.body)
+
     comment.postId = req.post
     comment.userId = req.user
     await comment.save()
@@ -28,6 +30,13 @@ export const createComment = async (req, res) => {
     res.status(500).json({error: e.message})
   }
 }
+// get post id
+// get user id
+// create comment w/ req body
+// create comment
+// update users comments array w/ comment id
+// update posts comment array with comment id
+// spread or .push
 
 export const getComment = async (req, res) => {
   try {
