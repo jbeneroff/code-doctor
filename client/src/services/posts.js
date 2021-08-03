@@ -4,7 +4,17 @@ import api from "./apiConfig";
 export const getAllPosts = async () => {
   try {
     const res = await api.get("/posts");
-    return user;
+    return res.data;
+  } catch (e) {
+    throw e;
+  }
+};
+
+export const getPost = async () => {
+  const {id} = req.params
+  try {
+    const res = await api.get(`/posts/${id}`);
+    return res.data;
   } catch (e) {
     throw e;
   }
@@ -13,7 +23,7 @@ export const getAllPosts = async () => {
 export const createPost = async (input) => {
   try {
     const res = await api.post("/posts", input);
-    return user;
+    return res.data;
   } catch (e) {
     throw e;
   }
