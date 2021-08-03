@@ -6,7 +6,7 @@ import { createComment } from '../controllers/comments.js'
 const router = Router({ mergeParams: true })
 
 
-router.get('/posts', restrict, getAllPosts)
+router.get('/posts', getAllPosts)
 
 router.get('/posts/:id', getPost)
 
