@@ -5,7 +5,7 @@ export default function Home(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
       <div>
-        Homee
+        Home
       </div>
    </Layout>
   )
