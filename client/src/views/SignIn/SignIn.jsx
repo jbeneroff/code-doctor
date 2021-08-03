@@ -24,7 +24,7 @@ export default function SignIn(props) {
     }));
   };
   return (
-    <Layout>
+    <Layout user={props.user} setUser={props.setUser}>
       SignIn
       <form onSubmit={handleSubmit}>
         <label>Email</label>
