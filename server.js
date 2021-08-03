@@ -6,6 +6,7 @@ import routes from './routes/index.js'
 
 const app = express()
 const PORT = process.env.PORT || 4567
+//was 4567
 
 app.use(express.json())
 app.use(cors())

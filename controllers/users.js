@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import User from "../models/user.js"
 
+
 const SALT_ROUNDS = process.env.SALT_ROUNDS || 11
 const TOKEN_KEY = process.env.TOKEN_KEY || "123456789"
 
@@ -86,3 +87,15 @@ export const getAllUsers = async (req, res) => {
     res.status(500).json({error: e.message})
   }
 }
+
+// export const getUserPosts = async (req, res) => {
+//   try {
+     
+//     const post = await User.findById(req.params.id).populate({ path: 'posts', model: 'Post' })
+//     console.log(post)
+//       // .then(user => { res.json(user) })
+       
+//    } catch (e) {
+//    res.status(500).json({error: e.message})   
+//   } 
+// }

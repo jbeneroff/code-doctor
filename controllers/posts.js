@@ -1,4 +1,6 @@
 import Post from '../models/post.js'
+import User from '../models/user.js'
+
 
 export const getAllPosts = async (req, res) => {
   try {
@@ -14,6 +16,9 @@ export const createPost = async (req, res) => {
     const post = new Post(req.body)
     post.userId = req.user
     await post.save()
+    const user = await User.findById(req.user)
+    user.posts.push(post) 
+    await user.save()
     res.status(201).json(post)
   } catch (e) {
     res.status(500).json({error: e.message})
