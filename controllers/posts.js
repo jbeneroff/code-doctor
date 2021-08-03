@@ -28,7 +28,7 @@ export const createPost = async (req, res) => {
 export const getPost = async (req, res) => {
   try {
     const {id} = req.params
-    const post = await Post.findById(id)
+    const post = await Post.findById(id).populate('comments')
     if (post) {
       res.json(post)
     } else {

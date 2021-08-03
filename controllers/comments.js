@@ -27,7 +27,7 @@ export const createComment = async (req, res) => {
     
     // const user = await User.findById(userId).populate('user_id')
   
-    const post = await Post.findById(req.params)    // console.log(post) 
+    const post = await Post.findById(req.params.id)    // console.log(post) 
     post.comments.push(comment)
      await post.save()
       res.status(201).json(post)
