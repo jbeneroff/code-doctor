@@ -19,7 +19,7 @@ function App() {
       setUser(await verify())
     }
     verifyUser()
-  })
+  }, [])
 
   return (
     <div className="App">
@@ -38,7 +38,7 @@ function App() {
       <Route path="/user/:id">
         <User user={user} setUser={setUser} />
       </Route>
-      <Route path="/posts">
+      <Route exact path="/posts">
         <AllPosts user={user} setUser={setUser} />
       </Route>
       <Route path="/posts/:id">
