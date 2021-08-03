@@ -1,22 +1,11 @@
 import Comment from '../models/comment.js'
-<<<<<<< HEAD
+import Post from '../models/post.js'
 import User from '../models/user.js'
-import Post from '../models/post.js'
-
-export const getAllComments = async (req, res) => {
-
-  try {
-    // const user = await User.find().populate('user_id')
-    // const post = await Post.find().populate('post_id')
-    const comments = await Comment.find({}).populate('post_id')
-=======
-import Post from '../models/post.js'
 
 
 export const getAllComments = async (req, res) => {
   try {
     const comments = await Comment.find({ postId: req.user })
->>>>>>> b6cfee1092e7dda690a78d3990b4a85ded0180da
     res.send(comments)
   } catch (e) {
     res.status(500).json({error: e.message})
@@ -24,45 +13,30 @@ export const getAllComments = async (req, res) => {
 }
 
 export const createComment = async (req, res) => {
-<<<<<<< HEAD
   const {id} = req.params
   try {
-    const user = await User.findById(userId).populate('user_id')
-    const post = await Post.findById(postId).populate('post_id')
+
+    const user = await User.findById(req.user)
+    const post = await Post.findById(req.post)
 
     const comment = new Comment(id, req.body)
 
-    comment.postId = req.post
     comment.userId = req.user
+    comment.postId = req.post
+
+    user.comments.push(comment)
+    await user.save()
+  
+    post.comments.push(comment)
+    await post.save()
+    
     await comment.save()
     res.status(201).json(comment)
-  } catch (e) {
-    res.status(500).json({error: e.message})
-  }
-}
-// get post id
-// get user id
-// create comment w/ req body
-// create comment
-// update users comments array w/ comment id
-// update posts comment array with comment id
-// spread or .push
-=======
-    try {
-      const comment = new Comment(req.body)
-      comment.postId = req.user
-      await comment.save()
-      console.log(comment.postId)
-      const post = await Post.findById(req.user)
-      post.comments.push(comment)
-      await post.save()
-      res.status(201).json(comment)
+
     } catch (e) {
       res.status(500).json({error: e.message})
-    }
- 
+    } 
 }
->>>>>>> b6cfee1092e7dda690a78d3990b4a85ded0180da
 
 export const getComment = async (req, res) => {
   try {
