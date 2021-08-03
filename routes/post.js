@@ -17,7 +17,7 @@ router.post('/posts/:id/comments', restrict, createComment)
 
 router.put('/posts/:id', restrict, updatePost)
 
-//router.delete('/posts/:id', restrict, deletePost)
+router.delete('/posts/:id', restrict, deletePost)
 
 router.delete('/posts/:id/comments/:id', restrict, deleteComment)
 
