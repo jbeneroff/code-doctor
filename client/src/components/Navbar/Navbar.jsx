@@ -1,12 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { signOut } from "../../services/users.js"
 
+
 export default function Navbar(props) {
+  const history = useHistory();
 
   const handleSignOut = () => {
     signOut()
     props.setUser(null)
+    history.push('/')
   }
 
   return (
