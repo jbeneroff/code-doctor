@@ -20,7 +20,7 @@ export default function PostDetails(props) {
 
   useEffect(() => {
     const fetchComments = async () => {
-      const data = await getComments()
+      // const data = await getComments()
       // setComments(data)
       // console.log(props.user)
     }
