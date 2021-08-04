@@ -8,6 +8,7 @@ import { useState } from "react"
 export default function NewPost(props) {
   const [input, setInput] = useState({ title: "", content: "" })
   const history = useHistory();
+  const { user } = props;
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -21,7 +22,7 @@ export default function NewPost(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await createPost(input);
-    history.push("/user/:id");
+    history.push(`/user/${user.id}`);
   };
 
 

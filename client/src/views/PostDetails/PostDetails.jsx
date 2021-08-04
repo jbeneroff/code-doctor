@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
+
 import { getPost, deletePost } from '../../services/posts'
 import { getUser } from '../../services/users'
-// import { getComments } from '../../services/comments'
+
+
+
+import { getComments } from '../../services/comments'
+
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
@@ -33,7 +38,7 @@ export default function PostDetails(props) {
 
   useEffect(() => {
     const fetchComments = async () => {
-      // const data = await getComments(userId)
+      // const data = await getComments()
       // setComments(data)
       // console.log(props.user)
     }

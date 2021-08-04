@@ -88,18 +88,6 @@ export const getAllUsers = async (req, res) => {
   }
 }
 
-// export const getUserPosts = async (req, res) => {
-//   try {
-     
-//     const post = await User.findById(req.params.id).populate({ path: 'posts', model: 'Post' })
-//     console.log(post)
-//       // .then(user => { res.json(user) })
-       
-//    } catch (e) {
-//    res.status(500).json({error: e.message})   
-//   } 
-// }
-
 export const getUser = async (req, res) => {
   try {
     const { id } = req.params
