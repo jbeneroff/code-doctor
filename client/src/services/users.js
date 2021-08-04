@@ -46,3 +46,12 @@ export const verify = async () => {
   }
 };
 
+export const getUser = async (userId) => {
+  try {
+    const user = await api.get(`/users/${userId}`)
+    return user
+  } catch (e) {
+    throw e;
+  }
+};
+
