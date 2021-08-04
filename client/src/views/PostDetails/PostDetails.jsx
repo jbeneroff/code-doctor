@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
-
 import { getPost, deletePost } from '../../services/posts'
+import { getAllComments, createComment} from '../../services/comments'
 import { getUser } from '../../services/users'
-
-
-
-import { getComments } from '../../services/comments'
-
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
@@ -29,7 +24,7 @@ export default function PostDetails(props) {
   useEffect(() => {
     const fetchUser = async () => {
       const data = await getUser(post.userId)
-      console.log(data)
+      // console.log(data)
       setUser(data)
     }
     fetchUser()
@@ -37,10 +32,20 @@ export default function PostDetails(props) {
   }, [post])
 
   useEffect(() => {
+    const fetchCommentUser = async () => {
+      const data = await getUser(comments)
+      console.log(data)
+      // setUser(data)
+    }
+    fetchCommentUser()
+    // eslint-disable-next-line
+  }, [])
+
+  useEffect(() => {
     const fetchComments = async () => {
-      // const data = await getComments()
-      // setComments(data)
-      // console.log(props.user)
+      const data = await getAllComments(postId.id)
+      // console.log(data.comments)
+      setComments(data.comments)
     }
     fetchComments()
   }, [])
@@ -56,8 +61,8 @@ export default function PostDetails(props) {
   }
 
   const handleDelete = async () => {
-    const deletedPost = await deletePost(postId)
-    history.push(`/user/${user.id}`);
+    const deletedPost = await deletePost(postId.id)
+    history.push(`/user/${user._id}`);
   }
 
   return (
@@ -68,9 +73,9 @@ export default function PostDetails(props) {
       <p>{user?.username}</p>
       <p>{post.content}</p>
       <div>
-        {comments.map((comment) => {
+        {comments.map((comment, key) => {
           return (
-            <div>
+            <div key={comment._id}>
               <h4>Show comment username</h4>
               <p>{comment.content}</p>
             </div>
