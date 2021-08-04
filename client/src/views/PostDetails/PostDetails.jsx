@@ -7,7 +7,7 @@ import { getUser } from '../../services/users'
 
 
 
-import { getComments } from '../../services/comments'
+import { getAllComments } from '../../services/comments'
 
 
 export default function PostDetails(props) {
@@ -36,14 +36,14 @@ export default function PostDetails(props) {
     // eslint-disable-next-line
   }, [post])
 
-  useEffect(() => {
-    const fetchComments = async () => {
-      // const data = await getComments()
-      // setComments(data)
-      // console.log(props.user)
-    }
-    fetchComments()
-  }, [])
+  // useEffect(() => {
+  //   const fetchComments = async () => {
+  //     const data = await getAllComments()
+  //     setComments(data)
+  //     console.log(props.user)
+  //   }
+  //   fetchComments()
+  // }, [])
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
@@ -57,7 +57,7 @@ export default function PostDetails(props) {
 
   const handleDelete = async () => {
     const deletedPost = await deletePost(postId)
-    history.push(`/user/${user.id}`);
+    history.push(`/user/${user._id}`);
   }
 
   return (
