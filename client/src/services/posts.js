@@ -10,6 +10,15 @@ export const getAllPosts = async () => {
   }
 };
 
+export const getAllUserPosts = async () => {
+  try {
+    const res = await api.get(`/users/${id}/posts`)
+    return res.data
+  } catch (e) {
+    throw e
+  }
+}
+
 export const getPost = async (id) => {
   try {
     const res = await api.get(`/posts/${id}`);
