@@ -99,3 +99,17 @@ export const getAllUsers = async (req, res) => {
 //    res.status(500).json({error: e.message})   
 //   } 
 // }
+
+export const getUser = async (req, res) => {
+  try {
+    const { id } = req.params
+    const user = await User.findById(id)
+    if (user) {
+      res.json(user)
+    } else {
+      res.status(404).json({ error: e.message })
+    }
+  } catch (e) {
+    res.status(500).json({ error: e.message })
+  }
+}
