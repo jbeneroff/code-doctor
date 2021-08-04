@@ -62,6 +62,7 @@ export default function PostDetails(props) {
 
   const handleDelete = async () => {
     const deletedPost = await deletePost(id)
+
     history.push(`/user/${user._id}`);
   }
 
