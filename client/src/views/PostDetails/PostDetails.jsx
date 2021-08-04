@@ -8,13 +8,15 @@ import { getUser } from '../../services/users'
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
   const [user, setUser] = useState({})
+  const [commentUser, setCommentUser] = useState({})
   const [comments, setComments] = useState([])
-  const postId = useParams()
+  // const [comment, setComment] = useState({})
+  const { id } = useParams()
   const history = useHistory()
 
   useEffect(() => {
     const fetchPost = async () => {
-      const data = await getPost(postId.id)
+      const data = await getPost(id)
       setPost(data)
     }
     fetchPost()
@@ -31,24 +33,22 @@ export default function PostDetails(props) {
     // eslint-disable-next-line
   }, [post])
 
-  useEffect(() => {
-    const fetchCommentUser = async () => {
-      const data = await getUser(comments)
+ 
+  const fetchCommentUser = async (comment) => {
+      const data = await getUser(comment.userId)
       console.log(data)
-      // setUser(data)
+      setCommentUser(data)
     }
-    fetchCommentUser()
-    // eslint-disable-next-line
-  }, [])
+
 
   useEffect(() => {
     const fetchComments = async () => {
-      const data = await getAllComments(postId.id)
+      const data = await getAllComments(id)
       // console.log(data.comments)
       setComments(data.comments)
     }
     fetchComments()
-  }, [])
+  }, [id])
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
@@ -61,7 +61,7 @@ export default function PostDetails(props) {
   }
 
   const handleDelete = async () => {
-    const deletedPost = await deletePost(postId.id)
+    const deletedPost = await deletePost(id)
     history.push(`/user/${user._id}`);
   }
 
@@ -74,9 +74,10 @@ export default function PostDetails(props) {
       <p>{post.content}</p>
       <div>
         {comments.map((comment, key) => {
+          // fetchCommentUser(comment)
           return (
             <div key={comment._id}>
-              <h4>Show comment username</h4>
+              <h4>{commentUser?.username}</h4>
               <p>{comment.content}</p>
             </div>
           )
