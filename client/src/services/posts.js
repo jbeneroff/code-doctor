@@ -10,18 +10,18 @@ export const getAllPosts = async () => {
   }
 };
 
-export const getAllUserPosts = async () => {
+export const getUserPosts = async (userId) => {
   try {
-    const res = await api.get(`/users/${id}/posts`)
-    return res.data
+    const res = await api.get(`/users/${userId}/posts`);
+    return res.data;
   } catch (e) {
-    throw e
+    throw e;
   }
-}
+};
 
-export const getPost = async (id) => {
+export const getPost = async (postId) => {
   try {
-    const res = await api.get(`/posts/${id}`);
+    const res = await api.get(`/posts/${postId}`);
     return res.data;
   } catch (e) {
     throw e;
@@ -37,18 +37,18 @@ export const createPost = async (input) => {
   }
 };
 
-export const updatePost = async (id, input) => {
+export const updatePost = async (postId, input) => {
   try {
-    const res = await api.put(`/posts/${id}`, input);
+    const res = await api.put(`/posts/${postId}`, input);
     return res.data;
   } catch (e) {
     throw e;
   }
 };
 
-export const deletePost = async (id) => {
+export const deletePost = async (postId) => {
   try {
-    const res = await api.post(`/posts/${id}`);
+    const res = await api.post(`/posts/${postId}`);
     return res.data;
   } catch (e) {
     throw e;
