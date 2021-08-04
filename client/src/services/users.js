@@ -49,7 +49,7 @@ export const verify = async () => {
 export const getUser = async (userId) => {
   try {
     const user = await api.get(`/users/${userId}`)
-    return user
+    return user.data
   } catch (e) {
     throw e;
   }

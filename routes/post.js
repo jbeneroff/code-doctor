@@ -10,7 +10,7 @@ router.get('/posts', getAllPosts)
 
 router.get('/posts/:id', getPost)
 
- router.get('/users/:id/posts', getAllUserPosts)
+router.get('/users/:id/posts', getAllUserPosts)
 
 router.post('/posts', restrict, createPost)
 

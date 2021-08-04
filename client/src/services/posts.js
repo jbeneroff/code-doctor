@@ -13,7 +13,7 @@ export const getAllPosts = async () => {
 export const getUserPosts = async (userId) => {
   try {
     const res = await api.get(`/users/${userId}/posts`);
-    return res.data;
+    return res.data
   } catch (e) {
     throw e;
   }

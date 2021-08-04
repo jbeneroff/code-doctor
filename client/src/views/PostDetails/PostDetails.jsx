@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost } from '../../services/posts'
-// import { getComments } from '../../services/comments'
+import { getComments } from '../../services/comments'
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
@@ -20,7 +20,7 @@ export default function PostDetails(props) {
 
   useEffect(() => {
     const fetchComments = async () => {
-      // const data = await getComments(userId)
+      // const data = await getComments()
       // setComments(data)
       // console.log(props.user)
     }
@@ -37,7 +37,7 @@ export default function PostDetails(props) {
         </Link>
       ) : (null)}
       {/* show username associated with post? */}
-      {/* <p>{post.user.username}</p> */}
+      <p>{`User: ${post.userId?.username}`}</p>
       <p>{post.content}</p>
       <div>
         {comments.map((comment) => {
