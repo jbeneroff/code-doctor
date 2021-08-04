@@ -19,6 +19,7 @@ export default function Navbar(props) {
       {props.user ? (
         <>
           <div>{props.user?.username}</div>
+          <Link to={`/user/${props.user.id}`}>User Profile</Link>
           <Link to="/new-post">Create New Post</Link>
           <button onClick={handleSignOut}>Sign Out</button>
         </>

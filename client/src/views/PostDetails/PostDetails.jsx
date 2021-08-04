@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useHistory, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
-import { getPost } from '../../services/posts'
+
+import { getPost, deletePost } from '../../services/posts'
+import { getUser } from '../../services/users'
+
+
+
 import { getComments } from '../../services/comments'
+
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
+  const [user, setUser] = useState({})
   const [comments, setComments] = useState([])
   const postId = useParams()
+  const history = useHistory()
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -19,6 +27,16 @@ export default function PostDetails(props) {
   }, [])
 
   useEffect(() => {
+    const fetchUser = async () => {
+      const data = await getUser(post.userId)
+      console.log(data)
+      setUser(data.data)
+    }
+    fetchUser()
+    // eslint-disable-next-line
+  }, [post])
+
+  useEffect(() => {
     const fetchComments = async () => {
       // const data = await getComments()
       // setComments(data)
@@ -27,17 +45,27 @@ export default function PostDetails(props) {
     fetchComments()
   }, [])
 
+  const displayEditLink = (post) => {
+    if (post.userId === props.user?.id)
+      return <Link to={`/update-post/${post._id}`}>Edit</Link>
+  }
+
+  const displayDelete = (post) => {
+    if (post.userId === props.user?.id)
+      return <button onClick={handleDelete}>Delete Post</button>
+  }
+
+  const handleDelete = async () => {
+    const deletedPost = await deletePost(postId)
+    history.push(`/user/${user.id}`);
+  }
+
   return (
     <Layout user={props.user} setUser={props.setUser}>
       <h2>{post.title}</h2>
-      {/*  */}
-      {props.user === post.userId ? (
-        <Link>
-          <button>Edit Post</button>
-        </Link>
-      ) : (null)}
-      {/* show username associated with post? */}
-      <p>{`User: ${post.userId?.username}`}</p>
+      {displayEditLink(post)}
+      {displayDelete(post)}
+      <p>{user.username}</p>
       <p>{post.content}</p>
       <div>
         {comments.map((comment) => {

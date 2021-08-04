@@ -10,6 +10,7 @@ import SignIn from './views/SignIn/SignIn';
 import SignUp from './views/SignUp/SignUp';
 import User from './views/User/User';
 import AboutUs from "./views/About/AboutUs"
+import UpdatePost from './views/UpdatePost/UpdatePost';
 
 function App() {
   const [user, setUser] = useState(null)
@@ -46,6 +47,9 @@ function App() {
       </Route>
       <Route path="/about">
         <AboutUs user={user} setUser={setUser} />
+      </Route>
+      <Route path={`/update-post/:id`}>
+        <UpdatePost user={user} setUser={setUser} />
       </Route>
     </div>
   );
