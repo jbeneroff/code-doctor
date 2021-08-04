@@ -27,15 +27,21 @@ export default function PostDetails(props) {
     fetchComments()
   }, [])
 
+  const displayEditLink = (post) => {
+    if (post.userId === props.user?.id)
+      return <Link to={`/update-post/${post._id}`}>Edit</Link>
+  }
+
   return (
     <Layout user={props.user} setUser={props.setUser}>
       <h2>{post.title}</h2>
       {/*  */}
-      {props.user === post.userId ? (
+      {displayEditLink(post)}
+      {/* {props.user === post.userId ? (
         <Link>
-          <button>Edit Post</button>
+          <button onClick={displayEditLink(post)}>Edit Post</button>
         </Link>
-      ) : (null)}
+      ) : (null)} */}
       {/* show username associated with post? */}
       {/* <p>{post.user.username}</p> */}
       <p>{post.content}</p>
