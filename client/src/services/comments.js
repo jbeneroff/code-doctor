@@ -3,7 +3,7 @@ import api from "./apiConfig";
 
 export const getAllComments = async (postId) => {
   try {
-    const res = await api.get(`/comments/${postId}`)
+    const res = await api.get(`posts/${postId}`)
     return res.data
   } catch (e) {
     throw e;
