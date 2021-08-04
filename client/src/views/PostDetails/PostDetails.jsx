@@ -30,7 +30,7 @@ export default function PostDetails(props) {
     const fetchUser = async () => {
       const data = await getUser(post.userId)
       console.log(data)
-      setUser(data.data)
+      setUser(data)
     }
     fetchUser()
     // eslint-disable-next-line
@@ -65,7 +65,7 @@ export default function PostDetails(props) {
       <h2>{post.title}</h2>
       {displayEditLink(post)}
       {displayDelete(post)}
-      <p>{user.username}</p>
+      <p>{user?.username}</p>
       <p>{post.content}</p>
       <div>
         {comments.map((comment) => {
