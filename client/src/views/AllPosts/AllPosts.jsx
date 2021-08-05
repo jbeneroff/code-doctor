@@ -1,3 +1,5 @@
+import './AllPosts.css'
+
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout.jsx'
@@ -43,6 +45,7 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         <input type="text" onChange={handleChange} placeholder="Search" />
+        <hr className="searchLine"/>
         {filteredPosts.map((post) => {
           return (
             <Link to={`/posts/${post._id}`}>
