@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost, deletePost } from '../../services/posts'
-import { getAllComments, createComment} from '../../services/comments'
+import { deleteComment} from '../../services/comments'
 import { getUser } from '../../services/users'
 import NewComment from '../../components/NewComment/NewComment'
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
   const [user, setUser] = useState({})
-  const [commentUser, setCommentUser] = useState({})
   const [comments, setComments] = useState([])
   const { id } = useParams()
   const history = useHistory()
@@ -81,10 +80,20 @@ export default function PostDetails(props) {
       {displayAddComment(post)}
       <div>
         {comments.map((comment, key) => {
+          const displayDeleteComment = (comment) => {
+            if (props.user?.id === comment.userId._id) {
+              return <button onClick={handleDeleteComment}>Delete Comment</button>
+            }
+          }
+          const handleDeleteComment = async () => {
+            await deleteComment(id, comment._id)
+            window.location.reload(false)
+          }
           return (
             <div key={comment._id}>
               <h4>{comment.userId.username}</h4>
               <p>{comment.content}</p>
+              {displayDeleteComment(comment)}
             </div>
           )
         })}
