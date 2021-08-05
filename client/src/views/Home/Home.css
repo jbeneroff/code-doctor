@@ -24,10 +24,11 @@
   margin: 20px 0 10px;
 }
 .home-1 h3 {
+  font-size: 35px;
   margin: 30px 0;
 }
 .home-1 h1 {
-  font-size: 60px;
+  font-size: 100px;
 }
 
 button {
@@ -54,7 +55,7 @@ button:hover {
   height: 100%;
   background: linear-gradient(#fb5283, #ff3527);
   position: absolute;
-  left: 60px;
+  left: 0px;
   top: 10px;
 
 }
@@ -67,7 +68,9 @@ button:hover {
 
 }
 .home-2 .logo {
-  width: 90%;
+  width: 80%;
+  margin: 0 0 300px 0;
+
 }
 
 .color-box {
@@ -81,6 +84,10 @@ button:hover {
   z-index: -1;
 
 
+}
+
+.wrapper {
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
 }
 
 
