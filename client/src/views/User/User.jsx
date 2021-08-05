@@ -10,7 +10,7 @@ export default function User(props) {
   useEffect(() => {
     const fetchUserPosts = async () => {
       let data = await getUserPosts(id)
-      console.log(data)
+      // console.log(data)
       setUserPosts(data)
     }
     fetchUserPosts()

@@ -11,7 +11,7 @@ export default function AllPosts(props) {
   useEffect(() => {
     const fetchPosts = async () => {
       let data = await getAllPosts()
-      console.log(data)
+      // console.log(data)
       setPosts(data)
     }
     fetchPosts()
@@ -43,9 +43,9 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         <input type="text" onChange={handleChange} placeholder="Search" />
-        {filteredPosts.map((post) => {
+        {filteredPosts.map((post, key) => {
           return (
-            <Link to={`/posts/${post._id}`}>
+            <Link key={post._id} to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
               <p>{post.timestamps}</p>
               {/* add in logic for formatting code for pmvp */}
