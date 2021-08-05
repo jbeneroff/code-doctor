@@ -5,6 +5,9 @@ import { getPost, deletePost } from '../../services/posts'
 import { deleteComment} from '../../services/comments'
 import { getUser } from '../../services/users'
 import NewComment from '../../components/NewComment/NewComment'
+import SyntaxHighLighter from 'react-syntax-highlighter'
+import { vs } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import './PostDetails.css'
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
@@ -34,21 +37,6 @@ export default function PostDetails(props) {
     } 
   }, [post])
 
-  // const fetchCommentUser = async (comment) => {
-  //     const data = await getUser(comment.userId)
-  //     console.log(data)
-  //     // setCommentUser(data)
-  //   }
-
-
-  // useEffect(() => {
-  //   const fetchComments = async () => {
-  //     const data = await getAllComments(id)
-  //     console.log(data.comments)
-  //     setComments(data.comments)
-  //   }
-  //   fetchComments()
-  // }, [id])
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
@@ -70,14 +58,20 @@ export default function PostDetails(props) {
       return <NewComment user={props.user}/>
   }
 
+
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      <h2>{post.title}</h2>
-      {displayEditLink(post)}
-      {displayDelete(post)}
-      <p>{user?.username}</p>
-      <p>{post.content}</p>
-      {displayAddComment(post)}
+      <div id='post'>
+        <h2>{post.title}</h2>
+        {displayEditLink(post)}
+        {displayDelete(post)}
+        <p>{user?.username}</p>
+        <SyntaxHighLighter language="javascript" style={vs}>
+        {`${post.content}`}
+        </SyntaxHighLighter>
+        {displayAddComment(post)}
+      </div>
+      
       <div>
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
@@ -90,9 +84,12 @@ export default function PostDetails(props) {
             window.location.reload(false)
           }
           return (
-            <div key={comment._id}>
+            <div id='comment' key={comment._id}>
               <h4>{comment.userId.username}</h4>
-              <p>{comment.content}</p>
+              <SyntaxHighLighter language="javascript" style={vs}>
+                {`${comment.content}`}
+              </SyntaxHighLighter>
+              <p>{comment.createdAt}</p>
               {displayDeleteComment(comment)}
             </div>
           )

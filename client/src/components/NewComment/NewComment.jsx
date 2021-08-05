@@ -22,12 +22,20 @@ export default function NewComment(props) {
     history.push(`/posts/${id}`);
   };
 
+  const useTab = (e) => {
+    if (e.key === 'Tab' && !e.shiftKey) {
+      document.execCommand('insertText', false, "  ")
+      e.preventDefault()
+      return false
+    }
+  }
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
         <label>Add Your Solution Here</label>
         <br/>
-        <textarea id="content" valiue={input.content} onChange={handleChange} />
+        <textarea id="content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
         <button>Submit</button>
       </form>
