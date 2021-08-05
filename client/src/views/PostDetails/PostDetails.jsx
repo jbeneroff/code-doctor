@@ -5,6 +5,8 @@ import { getPost, deletePost } from '../../services/posts'
 import { deleteComment} from '../../services/comments'
 import { getUser } from '../../services/users'
 import NewComment from '../../components/NewComment/NewComment'
+import SyntaxHighLighter from 'react-syntax-highlighter'
+import { vs } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
@@ -93,6 +95,9 @@ export default function PostDetails(props) {
             <div key={comment._id}>
               <h4>{comment.userId.username}</h4>
               <p>{comment.content}</p>
+              <SyntaxHighLighter language="javascript" style={vs}>
+                {`${comment.content}`}
+              </SyntaxHighLighter>
               {displayDeleteComment(comment)}
             </div>
           )
