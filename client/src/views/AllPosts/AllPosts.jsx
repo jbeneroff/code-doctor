@@ -1,3 +1,5 @@
+import './AllPosts.css'
+
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout.jsx'
@@ -17,27 +19,6 @@ export default function AllPosts(props) {
     fetchPosts()
   }, [])
 
-  // useEffect(() => {
-  //   setFilteredPosts(posts)
-  // }, [posts])
-
-  // useEffect(() => {
-  //   if (input) {
-  //     setFilteredPosts(posts.filter((post) => {
-  //       if (post.title.includes(input)) {
-  //         return post
-  //       }
-  //       return null
-  //     }))
-  //   } else {
-  //     setFilteredPosts(posts)
-  //   }
-  // }, [posts, input])
-
-  // const handleChange = async (e) => {
-  //   setInput(e.target.value)
-  // }
-
   const handleChange = () => {
     const result = posts.filter((post) => {
       return (post.title.toLowerCase().includes(input.toLowerCase()))
@@ -52,6 +33,7 @@ export default function AllPosts(props) {
       <Layout user={props.user} setUser={props.setUser}>
         <form onSubmit={handleChange}>
           <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
+          <hr className="searchLine"/>
         </form>
         {matches.map((post, key) => {
           return (

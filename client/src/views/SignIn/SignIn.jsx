@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import './SignIn.css'
+import { useState } from 'react'
 import Layout from "../../components/Layout/Layout"
 import { signIn } from "../../services/users.js"
 import { useHistory } from "react-router-dom";
@@ -25,8 +26,12 @@ export default function SignIn(props) {
   };
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      SignIn
-      <form onSubmit={handleSubmit}>
+      <div className="container">
+        <form onSubmit={handleSubmit}>
+          SignIn
+          <br /><hr className="solid" />
+          Please enter your credentials to login to Code Doctor<br />
+          <br />
         <label>Email</label>
         <br />
         <input
@@ -34,19 +39,24 @@ export default function SignIn(props) {
           type="email"
           value={input.email}
           onChange={handleInput}
+            placeholder="email"
+            required={true}
         />
         <br />
         <label>Password</label>
         <br />
         <input
-          id="password"
-          type="password"
-          value={input.password}
-          onChange={handleInput}
+            id="password"
+            type="password"
+            value={input.password}
+            onChange={handleInput}
+            placeholder="password"
+            required={true}
         />
         <br />
         <button>Sign In</button>
-      </form>
+        </form>
+        </div>
     </Layout>
   );
 }

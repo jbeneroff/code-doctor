@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+
+
+
+div > form{
+border: 2px solid slategray;
+border-radius: 12px;
+}
+
+form > button{
+  border-radius: 9px;
+  margin: 3px 0px 1px 0.25px;
+}
+
+input#email,input#password
+{
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  margin: 10px 0px;
+}
+
+
+input#email:focus, input#password:focus{
+  background-color: #ddd;
+  border: 0px;
+}
+
+form > label {
+  font-weight: bold;
+}
