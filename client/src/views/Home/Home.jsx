@@ -15,14 +15,16 @@ export default function Home(props) {
           <h1>Welcome to Code Doctor!</h1>
           <h3>A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community! </h3>
           <Link to="/posts">
-        <button>See Community Posts</button>
+        <button className="b2">See Community Posts</button>
           </Link>
        
         </div>
 
         <div className="home-2">
-          <img src="https://api.freelogodesign.org/files/60d3d03b49064128906fda813b305475/thumb/logo_200x200.png?v=637637760310000000" className="logo" />
-          
+          <h1>Not a Member Yet? Get Signed Up Below!</h1>
+          <Link to="/sign-up">
+           <button className="b1">Sign Up</button>
+          </Link>
          
       
           <div className="color-box">
