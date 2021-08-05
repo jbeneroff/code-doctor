@@ -2,14 +2,23 @@
   margin: 0;
   padding: 0;
  font-family: sans-serif;
-
 }
-
+html, body {
+  width:100%;
+  height: 100%
+}
+/* body {
+  position: absolute;
+} */
 .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 300px 0;
+  background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+  height: 100%;
+  position: absolute;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .home-1 {
@@ -52,7 +61,7 @@ button:hover {
 .home-1::after{
   content: "";
   width: 10px;
-  height: 100%;
+  height: 90%;
   background: linear-gradient(#fb5283, #ff3527);
   position: absolute;
   left: 0px;
@@ -67,27 +76,67 @@ button:hover {
   align-items: center;
 
 }
-.home-2 .logo {
+.home-2 h1 {
   width: 80%;
   margin: 0 0 300px 0;
+  color: black;
+
 
 }
 
-.color-box {
+/* .color-box {
   position: absolute;
   right: 0;
   top: 0;
   background: linear-gradient(#ff54a2, #ff6062);
   border-radius: 20px 0 0 20px;
-  height: 100%;
+  height: 80%;
   width: 80%;
   z-index: -1;
 
 
-}
+} */
 
-.wrapper {
+/* .wrapper {
   background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+  height: 100%;
+  background-attachment: fixed;
+
+} */
+
+
+@media only screen and (max-width: 700px) {
+
+  .wrapper {
+    flex-direction: column;
+    margin: 50px 0;
+    min-height: 100vh
+
+  }
+  .home-1 h1 {
+    font-size: 60px;
+
+  }
+
+  .home-2  h1 {
+    flex-basis: 100%;
+    margin-bottom: 400px;
+    font-size: 60px;
+
+  }
+  .home-1::after{
+    content: "";
+    width: 10px;
+    height: 90%;
+    background: linear-gradient(#fb5283, #ff3527);
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    display: hidden
+  
+  }
+
+  
 }
 
 
@@ -109,37 +158,3 @@ button:hover {
 
 
 
-
-
-/* body {
-  margin: 0;
-  font-family: Arial,
-   Helvetica, sans-serif;
- 
-  font-size: 17px;
-  color: #926239;
-  line-height: 1.6;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("https://i.pinimg.com/originals/76/dc/af/76dcafc26efcb4fd9cc77292fce442be.png");
-  background-size: cover;
-  background-position: center;
-} */
-
-/* .home {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("https://i.pinimg.com/originals/76/dc/af/76dcafc26efcb4fd9cc77292fce442be.png");
-  background-size: cover;
-
-} */
-/* .home h1 {
-  color: white;
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-}
