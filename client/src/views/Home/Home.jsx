@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import { Link } from "react-router-dom"
 import "./Home.css"
-import Logo from "./cdlogo.png"
+
 
 
 export default function Home(props) {
@@ -21,11 +21,14 @@ export default function Home(props) {
         </div>
 
         <div className="home-2">
+          <img src="https://api.freelogodesign.org/files/60d3d03b49064128906fda813b305475/thumb/logo_200x200.png?v=637637760310000000" className="logo" />
+          
          
       
           <div className="color-box">
             
-</div>
+            
+          </div>
        
         </div>
        
