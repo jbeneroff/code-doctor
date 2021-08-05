@@ -16,30 +16,29 @@ export default function Navbar(props) {
   return (
     <div>
       <div className="header">
-      <Link to="/" className="logo" >
-        <h1>Code Doctor</h1>
-        </Link>
-      
-      <Link to="/posts">All Posts</Link>
-        <Link to="/about">About Us</Link>
+      <Link to="/" className="logo" ><h1>Code Doctor</h1></Link>
+        <div className="header-right">
+      {/* <Link to="/posts">All Posts</Link>
+        <Link to="/about">About Us</Link> */}
      
-      {props.user ? (
-      <>
-          <div>{props.user?.username}</div>
-          <div className="header-right">
-          <Link to={`/user/${props.user.id}`}>User Profile</Link>
+          {props.user ? (
+          <>
+            {/* <div>{props.user?.username}</div> */ }
+            <Link to="/posts">All Posts</Link>
+            <Link to="/about">About Us</Link>
+            <Link to={`/user/${props.user.id}`}>User Profile</Link>
             <Link to="/new-post">Create New Post</Link>
-            <button className="btn" onClick={handleSignOut}>Sign Out</button>
-            </div>
-           
-      </>
-      ) : (
-        <>
+              <button className="btn" onClick={handleSignOut}>Sign Out</button>
+          </>
+          ) : (
+          <>
+          <Link to="/posts">All Posts</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/sign-in">Sign In</Link>
           <Link to="/sign-up">Sign Up</Link>
-          
-        </>
+          </>
         )}
+        </div>
          </div> 
     </div>
   )
