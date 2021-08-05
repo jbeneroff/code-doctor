@@ -19,9 +19,9 @@ export const getComment = async (commentId) => {
   }
 };
 
-export const createComment = async (postId) => {
+export const createComment = async (postId, input) => {
   try {
-    const res = await api.post(`/comments/${postId}/comments`)
+    const res = await api.post(`/posts/${postId}/comments`, input)
     return res.data
   } catch (e) {
     throw e;

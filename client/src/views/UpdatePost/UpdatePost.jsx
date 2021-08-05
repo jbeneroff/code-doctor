@@ -1,5 +1,5 @@
 import { updatePost, getPost } from '../../services/posts'
-import { Link, useParams, useHistory } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import React, { useEffect, useState } from 'react'
 
@@ -40,11 +40,11 @@ export default function UpdatePost(props) {
         <form onSubmit={handleSubmit}>
           <label>Title</label>
           <br />
-          <input id="title" value={input.title} onChange={handleChange} />
+          <input placeholder={post.title} id="title" value={input.title} onChange={handleChange} />
           <br />
           <label>Paste Your Code Here</label>
           <br />
-          <textarea id="content" value={input.content} onChange={handleChange} />
+          <textarea placeholder={post.content} id="content" value={input.content} onChange={handleChange} />
           <br />
           <button>Submit</button>
         </form>

@@ -4,13 +4,13 @@ import Layout from '../../components/Layout/Layout'
 import { getPost, deletePost } from '../../services/posts'
 import { getAllComments, createComment} from '../../services/comments'
 import { getUser } from '../../services/users'
+import NewComment from '../../components/NewComment/NewComment'
 
 export default function PostDetails(props) {
   const [post, setPost] = useState({})
   const [user, setUser] = useState({})
   const [commentUser, setCommentUser] = useState({})
   const [comments, setComments] = useState([])
-  // const [comment, setComment] = useState({})
   const { id } = useParams()
   const history = useHistory()
 
@@ -18,37 +18,38 @@ export default function PostDetails(props) {
     const fetchPost = async () => {
       const data = await getPost(id)
       setPost(data)
+      console.log(data.comments)
+      setComments(data.comments)
     }
     fetchPost()
     // eslint-disable-next-line
   }, [])
 
   useEffect(() => {
-    const fetchUser = async () => {
-      const data = await getUser(post.userId)
-      // console.log(data)
-      setUser(data)
-    }
-    fetchUser()
-    // eslint-disable-next-line
+    if (post.userId) {
+      const fetchUser = async () => {
+        const data = await getUser(post.userId)
+        setUser(data)
+      }
+      fetchUser()
+    } 
   }, [post])
 
- 
-  const fetchCommentUser = async (comment) => {
-      const data = await getUser(comment.userId)
-      console.log(data)
-      setCommentUser(data)
-    }
+  // const fetchCommentUser = async (comment) => {
+  //     const data = await getUser(comment.userId)
+  //     console.log(data)
+  //     // setCommentUser(data)
+  //   }
 
 
-  useEffect(() => {
-    const fetchComments = async () => {
-      const data = await getAllComments(id)
-      // console.log(data.comments)
-      setComments(data.comments)
-    }
-    fetchComments()
-  }, [id])
+  // useEffect(() => {
+  //   const fetchComments = async () => {
+  //     const data = await getAllComments(id)
+  //     console.log(data.comments)
+  //     setComments(data.comments)
+  //   }
+  //   fetchComments()
+  // }, [id])
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
@@ -61,9 +62,13 @@ export default function PostDetails(props) {
   }
 
   const handleDelete = async () => {
-    const deletedPost = await deletePost(id)
-
+    await deletePost(id)
     history.push(`/user/${user._id}`);
+  }
+
+  const displayAddComment = () => {
+    if (props.user)
+      return <NewComment user={props.user}/>
   }
 
   return (
@@ -73,12 +78,12 @@ export default function PostDetails(props) {
       {displayDelete(post)}
       <p>{user?.username}</p>
       <p>{post.content}</p>
+      {displayAddComment(post)}
       <div>
         {comments.map((comment, key) => {
-          // fetchCommentUser(comment)
           return (
             <div key={comment._id}>
-              <h4>{commentUser?.username}</h4>
+              <h4>{comment.userId.username}</h4>
               <p>{comment.content}</p>
             </div>
           )

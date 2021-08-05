@@ -16,7 +16,7 @@ export const getAllPosts = async (req, res) => {
 export const getPost = async (req, res) => {
   try {
     const {id} = req.params
-    const post = await Post.findById(id).populate('comments')
+    const post = await Post.findById(id).populate({ path: 'comments', populate: { path: 'userId' } })
     if (post) {
       res.json(post)
     } else {
