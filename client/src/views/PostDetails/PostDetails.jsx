@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { getPost, deletePost } from '../../services/posts'
-import { deleteComment} from '../../services/comments'
+import { deleteComment } from '../../services/comments'
 import { getUser } from '../../services/users'
 import NewComment from '../../components/NewComment/NewComment'
 import SyntaxHighLighter from 'react-syntax-highlighter'
@@ -34,7 +34,7 @@ export default function PostDetails(props) {
         setUser(data)
       }
       fetchUser()
-    } 
+    }
   }, [post])
 
 
@@ -55,7 +55,7 @@ export default function PostDetails(props) {
 
   const displayAddComment = () => {
     if (props.user)
-      return <NewComment user={props.user}/>
+      return <NewComment user={props.user} />
   }
 
 
@@ -67,11 +67,11 @@ export default function PostDetails(props) {
         {displayDelete(post)}
         <p>{user?.username}</p>
         <SyntaxHighLighter language="javascript" style={vs}>
-        {`${post.content}`}
+          {`${post.content}`}
         </SyntaxHighLighter>
         {displayAddComment(post)}
       </div>
-      
+
       <div>
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
@@ -89,7 +89,7 @@ export default function PostDetails(props) {
               <SyntaxHighLighter language="javascript" style={vs}>
                 {`${comment.content}`}
               </SyntaxHighLighter>
-              <p>{comment.createdAt}</p>
+              <p>{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
               {displayDeleteComment(comment)}
             </div>
           )
