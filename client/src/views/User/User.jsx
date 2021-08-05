@@ -10,7 +10,7 @@ export default function User(props) {
   useEffect(() => {
     const fetchUserPosts = async () => {
       let data = await getUserPosts(id)
-      console.log(data)
+      // console.log(data)
       setUserPosts(data)
     }
     fetchUserPosts()
@@ -27,7 +27,7 @@ export default function User(props) {
             <Link to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
               {/* add in logic for formatting code for pmvp */}
-              <p>{post.content}</p>
+              {/* <p>{post.content}</p> */}
             </Link>
           </div>
         )

@@ -3,6 +3,7 @@ import Layout from '../../components/Layout/Layout'
 import { createPost } from '../../services/posts.js'
 import { useHistory } from "react-router-dom"
 import { useState } from "react"
+import './NewPost.css'
 
 
 export default function NewPost(props) {
@@ -25,8 +26,16 @@ export default function NewPost(props) {
     history.push(`/user/${user.id}`);
   };
 
+  const useTab = (e) => {
+    if (e.key === 'Tab' && !e.shiftKey) {
+      document.execCommand('insertText', false, "  ")
+      e.preventDefault()
+      return false
+    }
+  }
 
   return (
+  
     <Layout user={props.user} setUser={props.setUser}>
       
       <h1>Create New Post</h1>
@@ -35,15 +44,15 @@ export default function NewPost(props) {
 
         <label>Title</label>
         <br/>
-        <input id="title" valiue={input.title} onChange={handleChange} />
+        <input id="title" value={input.title} onChange={handleChange} />
         <br/>
         <label>Paste Your Code Here</label>
         <br/>
-        <textarea id="content" valiue={input.content} onChange={handleChange} />
+        <textarea id="content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
         <button>Submit</button>
 
       </form>
-   </Layout>
+    </Layout>
   )
 }

@@ -19,9 +19,9 @@ export const getComment = async (commentId) => {
   }
 };
 
-export const createComment = async (postId) => {
+export const createComment = async (postId, input) => {
   try {
-    const res = await api.post(`/comments/${postId}/comments`)
+    const res = await api.post(`/posts/${postId}/comments`, input)
     return res.data
   } catch (e) {
     throw e;
@@ -37,9 +37,9 @@ export const updateComment = async (commentId) => {
   }
 };
 
-export const deleteComment = async (commentId) => {
+export const deleteComment = async (postId, commentId) => {
   try {
-    const res = await api.delete(`/comments/${commentId}`)
+    const res = await api.delete(`/posts/${postId}/comments/${commentId}`)
     return res.data
   } catch (e) {
     throw e;
