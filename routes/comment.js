@@ -15,7 +15,7 @@ const router = Router({mergeParams: true})
 
 router.put('/comments/:id', restrict, updateComment)
 
-router.delete('/comments/:id', restrict, deleteComment)
+// router.delete('/comments/:id', restrict, deleteComment)
 
 
 export default router
