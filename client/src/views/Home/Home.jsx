@@ -2,16 +2,34 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import { Link } from "react-router-dom"
 import "./Home.css"
+import Logo from "./cdlogo.png"
+
 
 export default function Home(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      <div className="home">
-        <h1>Code Doctor</h1>
-        <Link to="/posts">
+      <div className="wrapper">
+
+        <div className="home-1">
+
+          <h1>Welcome to Code Doctor!</h1>
+          <h3>A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community! </h3>
+          <Link to="/posts">
         <button>See Community Posts</button>
-        </Link>
+          </Link>
        
+        </div>
+
+        <div className="home-2">
+         
+      
+          <div className="color-box">
+            
+</div>
+       
+        </div>
+       
+        
       </div>
    </Layout>
   )
