@@ -32,16 +32,14 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         <form onSubmit={handleChange}>
-          <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
-          <hr className="searchLine"/>
+          <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />  
         </form>
+        <hr className="searchLine"/>
         {matches.map((post, key) => {
           return (
             <Link key={post._id} to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
               <p>{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
-              {/* add in logic for formatting code for pmvp */}
-              {/* <p>{post.content}</p> */}
             </Link>
           )
         })}

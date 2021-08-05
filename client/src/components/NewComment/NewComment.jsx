@@ -33,7 +33,8 @@ export default function NewComment(props) {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>Add Your Solution Here</label>
+        <h2>Comment</h2>
+        <h3>Add Your Solution Here</h3>
         <br/>
         <textarea id="content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>

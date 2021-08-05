@@ -63,15 +63,13 @@ export default function PostDetails(props) {
     <Layout user={props.user} setUser={props.setUser}>
       <div id='post'>
         <h2>{post.title}</h2>
-        {displayEditLink(post)}
-        {displayDelete(post)}
         <p>{user?.username}</p>
-        <SyntaxHighLighter language="javascript" style={vs}>
+        <SyntaxHighLighter id='post-content' language="javascript" style={vs}>
           {`${post.content}`}
         </SyntaxHighLighter>
-        {displayAddComment(post)}
+        {displayEditLink(post)}
+        {displayDelete(post)}
       </div>
-
       <div>
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
@@ -86,7 +84,7 @@ export default function PostDetails(props) {
           return (
             <div id='comment' key={comment._id}>
               <h4>{comment.userId.username}</h4>
-              <SyntaxHighLighter language="javascript" style={vs}>
+              <SyntaxHighLighter id='comment-content' language="javascript" style={vs}>
                 {`${comment.content}`}
               </SyntaxHighLighter>
               <p>{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
@@ -94,6 +92,7 @@ export default function PostDetails(props) {
             </div>
           )
         })}
+        {displayAddComment(post)}
       </div>
     </Layout>
   )

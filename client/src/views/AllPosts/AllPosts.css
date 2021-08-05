@@ -1,18 +1,18 @@
-input[type=text]{
-width: 10%;
+input[type="text"] {
+  width: 10%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus{
-width: 40%
+input[type="text"]:focus {
+  width: 40%;
 }
 
-#root > div > div > div > div:nth-child(2) > a {
+/* #root > div > div > div > div:nth-child(2) > a {
 
-}
+} */
 
-hr.searchLine{
+hr.searchLine {
   border-top: 3px solid black;
   border-radius: 8px;
   width: 50%;

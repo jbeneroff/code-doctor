@@ -1,7 +1,15 @@
 #post {
-  text-align: left;
+  text-align: center;
 }
 
 #comment {
+  text-align: center;
+}
+
+#post-content {
+  text-align: left;
+}
+
+#comment-content {
   text-align: left;
 }
