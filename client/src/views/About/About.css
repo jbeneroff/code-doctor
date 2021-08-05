@@ -1,0 +1,13 @@
+div.g4{
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 600px){
+  div.g4{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
