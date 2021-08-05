@@ -83,4 +83,8 @@ div.Logo{
   #root > div > div > div > div.header > div:nth-child(2) > a:active{
     background-color: dodgerblue;
   }
+
+  div.header > a.logo{
+font-size: xx-small;
+  }
 }
