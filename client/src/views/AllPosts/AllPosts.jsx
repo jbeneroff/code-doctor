@@ -43,6 +43,9 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         <input type="text" onChange={handleChange} placeholder="Search" />
+       
+        <div>{`${props.user?.username}'s Posts`}</div>
+        
         {filteredPosts.map((post) => {
           return (
             <Link to={`/posts/${post._id}`}>

@@ -1,12 +1,12 @@
 import { updatePost, getPost } from '../../services/posts'
-import { Link, useParams, useHistory } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import React, { useEffect, useState } from 'react'
 
 
 export default function UpdatePost(props) {
   const [input, setInput] = useState({ title: "", content: "" })
-  const [post, setPost] = useState({ title: "", content: "" })
+  // const [post, setPost] = useState({ title: "", content: "" })
   const history = useHistory()
   const { id } = useParams()
 
@@ -24,14 +24,14 @@ export default function UpdatePost(props) {
     history.push(`/posts/${id}`);
   };
 
-  useEffect(() => {
-    const fetchPost = async () => {
-      const data = await getPost(id)
-      setPost(data)
-    }
-    fetchPost()
-    // eslint-disable-next-line
-  }, [])
+  // useEffect(() => {
+  //   const fetchPost = async () => {
+  //     const data = await getPost(id)
+  //     setPost(data)
+  //   }
+  //   fetchPost()
+  //   // eslint-disable-next-line
+  // }, [])
 
 
   return (
