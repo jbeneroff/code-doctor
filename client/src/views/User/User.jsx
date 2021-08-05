@@ -27,7 +27,7 @@ export default function User(props) {
             <Link to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
               {/* add in logic for formatting code for pmvp */}
-              <p>{post.content}</p>
+              {/* <p>{post.content}</p> */}
             </Link>
           </div>
         )

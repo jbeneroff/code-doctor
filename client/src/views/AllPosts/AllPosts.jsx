@@ -44,7 +44,7 @@ export default function AllPosts(props) {
     })
     setFilteredPosts(result)
   }
-  
+
   const matches = filteredPosts.filter((item) => item.title.toLowerCase().includes(input.toLowerCase()))
 
   return (
@@ -57,9 +57,9 @@ export default function AllPosts(props) {
           return (
             <Link key={post._id} to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
-              <p>{post.timestamps}</p>
+              <p>{post.createdAt}</p>
               {/* add in logic for formatting code for pmvp */}
-              <p>{post.content}</p>
+              {/* <p>{post.content}</p> */}
             </Link>
           )
         })}
