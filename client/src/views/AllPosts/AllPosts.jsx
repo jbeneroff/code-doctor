@@ -34,7 +34,7 @@ export default function AllPosts(props) {
   //   }
   // }, [posts, input])
 
-    // const handleChange = async (e) => {
+  // const handleChange = async (e) => {
   //   setInput(e.target.value)
   // }
 
@@ -57,7 +57,7 @@ export default function AllPosts(props) {
           return (
             <Link key={post._id} to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
-              <p>{post.createdAt}</p>
+              <p>{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
               {/* add in logic for formatting code for pmvp */}
               {/* <p>{post.content}</p> */}
             </Link>
