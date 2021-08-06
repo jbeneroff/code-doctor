@@ -1,5 +1,4 @@
 import api from "./apiConfig";
-// import jwtDecode from "jwt-decode";
 
 export const getAllPosts = async () => {
   try {
