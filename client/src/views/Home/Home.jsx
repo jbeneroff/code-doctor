@@ -1,12 +1,12 @@
 import React from 'react'
-import Layout from '../../components/Layout/Layout'
+
 import { Link } from "react-router-dom"
 import "./Home.css"
 
 
 
 
-export default function Home(props) {
+export default function Home() {
   return (
     
  
