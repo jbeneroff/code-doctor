@@ -33,19 +33,21 @@ export default function AllPosts(props) {
       <Layout user={props.user} setUser={props.setUser}>
         <form onSubmit={handleChange}>
           <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
-          <hr className="searchLine"/>
         </form>
         {matches.map((post, key) => {
           return (
+            <div className="postarea">
             <Link key={post._id} to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
-              <p>{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
+              <p className="time">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
               {/* add in logic for formatting code for pmvp */}
               {/* <p>{post.content}</p> */}
             </Link>
+            </div>
           )
         })}
       </Layout>
     </div>
   )
 }
+ 

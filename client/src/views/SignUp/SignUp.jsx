@@ -12,7 +12,7 @@ export default function SignUp(props) {
     const user = await signUp(input);
     console.log(user);
     props.setUser(user);
-    history.push("/user/:id");
+    history.push(`/user/${user.id}`);
   };
 
   const handleInput = (e) => {
