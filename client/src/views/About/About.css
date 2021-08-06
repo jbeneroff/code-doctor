@@ -102,6 +102,7 @@ div.box.\34{
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 1;
+  animation-delay: 1.2s;
 }
 
 div.C{
@@ -114,6 +115,7 @@ background-image:url("https://tse1.mm.bing.net/th?id=OIP.T_xe1hN6_-hZ5l2C9dxG1gH
 background-size: cover;
 position: relative;
 height:100%;
+animation-duration: 1.2s;
 }
 
 div.text{
@@ -129,7 +131,65 @@ div.text{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-duration: 1.2s
 }
+
+.popup{
+  animation: popup 1s ease-out forwards;
+}
+
+.text{
+animation: text 1.2s ease-in forwards;
+}
+
+@keyframes popup{
+  0%{
+opacity: 0;
+background-image: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+transform: translateY(-4rem) scale(.75);
+  }
+
+  100%{
+opacity: 1;
+transform: none;
+  }
+}
+
+@keyframes text{
+  0%{
+    opacity: 0%;
+  }
+
+  10%{
+    opacity: 10%;
+  }
+
+  25%{
+    opacity: 25%;
+  }
+
+  33%{
+opacity: 33%;
+  }
+
+
+  50%{
+    opacity: 50%;
+  }
+
+  66% {
+    opacity: 66%;
+  }
+
+  75%{
+    opacity: 75%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
 
 @media screen and (max-width: 600px){
   div.g4{

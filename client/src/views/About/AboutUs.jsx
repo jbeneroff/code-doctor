@@ -133,8 +133,8 @@ export default function AboutUs(props) {
               </div>
 
 
-<div className="C K">
-          <ProfileCard
+<div className="C K" popup>
+          <ProfileCard 
             src={'https://media-exp1.licdn.com/dms/image/C5603AQHYymq1Sg8MXg/profile-displayphoto-shrink_800_800/0/1593224120300?e=1633564800&v=beta&t=4ht4CnAza0_gQ1jw55S9Ow0Ryh0BLv2eDgwSYSRK9Is'}
             alt={"Au Natueral"}
             name={"Kheyyon D. Parker"}
