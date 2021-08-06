@@ -64,9 +64,11 @@ export default function PostDetails(props) {
       <div id='post'>
         <h2>{post.title}</h2>
         <p>{user?.username}</p>
-        <SyntaxHighLighter id='post-content' language="javascript" style={vs}>
-          {`${post.content}`}
-        </SyntaxHighLighter>
+        <div id='code'>
+          <SyntaxHighLighter id='post-content' language="javascript" style={vs}>
+            {`${post.content}`}
+          </SyntaxHighLighter>
+        </div>
         {displayEditLink(post)}
         {displayDelete(post)}
       </div>

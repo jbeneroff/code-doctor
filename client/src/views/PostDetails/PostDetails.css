@@ -8,8 +8,18 @@
 
 #post-content {
   text-align: left;
+  margin: 0px 20px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
 }
 
 #comment-content {
   text-align: left;
+  margin: 0px 20px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
 }
