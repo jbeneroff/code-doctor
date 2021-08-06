@@ -8,10 +8,9 @@ export default function AboutUs(props) {
   return (
     <Layout user={props.user} setUset={props.setUser}>
       <div className="wrapper">
-        <h1>About Us</h1>
-
         <div className="description">
-          <h1>Who we are</h1>
+        <h1>About Us</h1>
+          <h2>Who we are</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vero quae assumenda minima quod animi commodi. Voluptates molestias porro perspiciatis? Dignissimos quia vitae quasi ea dolor dicta blanditiis eligendi sequi.
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sint modi excepturi mollitia molestiae saepe illo deserunt fugiat, md vm itaque,inventore ipsa assumenda blanditiis? In accusantium mollitia voluptate voluptates tempora consequatur!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorum, reiciendis corporis debitis deserunt porro aliquam explicabo mollitia, voluptatibus expedita doloremque? Sequi consectetur omnis eligendi nisi eveniet repudiandae, harum minus.
@@ -19,7 +18,7 @@ export default function AboutUs(props) {
 
         </div>
 
-
+      <div>
         <h1>Meet the creators of Code Doctor &copy; 2021</h1>
 
 
@@ -84,7 +83,8 @@ export default function AboutUs(props) {
         
         </ul>
          */}
-        <div className="g4">
+          <div className="g4">
+          <div className="C Z">
           <ProfileCard
             src={'https://media-exp1.licdn.com/dms/image/C4D03AQE6nCe_ENCmTA/profile-displayphoto-shrink_800_800/0/1575228409633?e=1633564800&v=beta&t=uK7UVK7bHUGwp6UpNqdxqErD1Kq1kv46BNRSRRVHeEk'}
             alt={"Coo dud"}
@@ -95,7 +95,10 @@ export default function AboutUs(props) {
             currentEmployer={"GA"}
             email={"mailto:"}
           />
-
+            <div className="box 1"></div>
+            </div>
+            
+         <div className="C J">
           <ProfileCard
             src={'https://media-exp1.licdn.com/dms/image/C5603AQGSnCK1Hyw5eg/profile-displayphoto-shrink_800_800/0/1536625204616?e=1633564800&v=beta&t=h_FDjPOq68kpNYJRJlg-qV618RL1KfDv4yDEoTByHPc'}
             alt={"Coo dud"}
@@ -105,9 +108,11 @@ export default function AboutUs(props) {
             jobTitle={""}
             currentEmployer={"GA"}
             email={"mailto:"}
-          />
+              />
+              <div className="box 2"></div>
+            </div>
 
-
+<div className="C S">
           <ProfileCard
             src={'https://media-exp1.licdn.com/dms/image/C5603AQFLGU4kt68DYw/profile-displayphoto-shrink_800_800/0/1537233787677?e=1633564800&v=beta&t=686FQLIu1ib8jsuGUCq9K9-uGepMSFLs6ir-CTk7wGc'}
             alt={"Coo dud"}
@@ -117,22 +122,29 @@ export default function AboutUs(props) {
             LI={"https://www.linkedin.com/in/stefanie-nussbaum/"}
             currentEmployer={"GA"}
             email={"mailto:"}
-          />
+              />
+               <div className="box 3"></div>
+              </div>
 
 
-
+<div className="C K">
           <ProfileCard
             src={'https://media-exp1.licdn.com/dms/image/C5603AQHYymq1Sg8MXg/profile-displayphoto-shrink_800_800/0/1593224120300?e=1633564800&v=beta&t=4ht4CnAza0_gQ1jw55S9Ow0Ryh0BLv2eDgwSYSRK9Is'}
             alt={"Au Natueral"}
             name={"Kheyyon D. Parker"}
             GH={"https://github.com/keyy123"}
             LI={"https://www.linkedin.com/in/kheyyon-parker/"}
-            jobTitle={"Owner of the Banned Lunk, Co-Founder of SoLo's Food, Fitness Enthusiast, Programmer"}
+            jobTitle={""}
             currentEmployer={"GA"}
             email={"mailto:kheyyon.parker@gmail.com"}
-          />
+              />
+              <div className="box 4"></div>
+           </div>
+            
+           
+            
         </div>
-
+        </div>
 
       </div>
     </Layout>
