@@ -29,7 +29,7 @@ export default function SignIn(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
       
-      <div className="wrapper">
+      <div className="authform">
         <h1>Login</h1>
       
         <form onSubmit={handleSubmit}>
@@ -37,7 +37,8 @@ export default function SignIn(props) {
         <div className="text-area">
         <span></span>
         <label>Email</label>
-        <input
+            <input
+          className="email"
           id="email"
           type="email"
           value={input.email}
@@ -48,7 +49,8 @@ export default function SignIn(props) {
           <div className="text-area">
             <span></span>
         <label>Password</label>
-        <input
+            <input
+            className="password"
             id="password"
             type="password"
             value={input.password}
