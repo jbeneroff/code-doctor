@@ -1,17 +1,16 @@
 #post-content {
   text-align: left;
-  margin: auto;
-  width: 90%;
+  margin: 10px auto 5px auto;
+  width: 88.5%;
   border-style: solid;
   border-color: lightgrey;
   border-width: 1px;
   border-radius: 5px;
-  margin-top: 10px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 hr {
-  margin: auto;
+  margin: 5px auto;
   max-width: 90%;
   color: white;
 }
@@ -19,18 +18,18 @@ hr {
 #comment-content {
   text-align: left;
   margin: auto;
-  width: 90%;
+  width: 88.5%;
   border-style: solid;
   border-color: lightgrey;
   border-width: 1px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #post-title {
   text-align: left;
-  margin: auto;
-  width: 90%;
+  margin: 20px auto 5px auto;
+  width: 90.5%;
 }
 
 #username {
@@ -41,7 +40,7 @@ hr {
 
 #commenter {
   text-align: left;
-  margin: auto;
+  margin: 5px auto;
   width: 90%;
 }
 
@@ -52,5 +51,23 @@ hr {
   font-size: 12px;
 }
 
+#comments-header {
+  text-align: left;
+  margin: 10px auto;
+  width: 90%;
+}
+
 @media only screen and (min-width: 768px) {
+  hr,
+  #post-title,
+  #username,
+  #commenter,
+  .timestamp,
+  #comments-header {
+    max-width: 75%;
+  }
+  #post-content,
+  #comment-content {
+    max-width: 74%;
+  }
 }

@@ -36,13 +36,13 @@ export default function AllPosts(props) {
         </form>
         {matches.map((post, key) => {
           return (
-            <div className="postarea">
-            <Link key={post._id} to={`/posts/${post._id}`}>
-              <h3>{post.title}</h3>
-              <p className="time">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
-              {/* add in logic for formatting code for pmvp */}
-              {/* <p>{post.content}</p> */}
-            </Link>
+            <div key={post._id} className="postarea">
+              <Link className='post-link' to={`/posts/${post._id}`}>
+                <h3 className='post-title' >{post.title}</h3>
+                <p className="time">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
+                {/* add in logic for formatting code for pmvp */}
+                {/* <p>{post.content}</p> */}
+              </Link>
             </div>
           )
         })}

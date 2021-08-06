@@ -1,8 +1,17 @@
 #new-comment-content {
-  width: 90%;
+  width: 80%;
   padding: 3px;
+  height: 100px;
 }
 
 #new-comment {
   border: none;
+}
+
+#add-comment-header {
+  margin-bottom: 2px;
+}
+
+#submit-comment {
+  margin-bottom: 10px;
 }
