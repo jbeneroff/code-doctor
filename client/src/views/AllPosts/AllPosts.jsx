@@ -31,8 +31,8 @@ export default function AllPosts(props) {
   return (
     <div>
       <Layout user={props.user} setUser={props.setUser}>
-        <form onSubmit={handleChange}>
-          <input className="searchText" value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
+        <form className="searchbar" onSubmit={handleChange}>
+          <input className="search-text" value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
         </form>
         {matches.map((post, key) => {
           return (
@@ -40,8 +40,6 @@ export default function AllPosts(props) {
               <Link className='post-link' to={`/posts/${post._id}`}>
                 <h3 className='post-title' >{post.title}</h3>
                 <p className="time">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
-                {/* add in logic for formatting code for pmvp */}
-                {/* <p>{post.content}</p> */}
               </Link>
             </div>
           )
@@ -50,4 +48,3 @@ export default function AllPosts(props) {
     </div>
   )
 }
- 
