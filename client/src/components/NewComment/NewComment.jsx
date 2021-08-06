@@ -11,6 +11,7 @@ export default function NewComment(props) {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
+
     setInput((prevInput) => ({
       ...prevInput,
       [id]: value,
@@ -33,10 +34,10 @@ export default function NewComment(props) {
   return (
     <div>
       <form id='new-comment' onSubmit={handleSubmit}>
-        <label>Add Your Solution Here</label>
-        <br />
-        <textarea id="content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab} />
-        <br />
+        <h3>Add Your Solution Here</h3>
+        <br/>
+        <textarea id="new-comment-content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
+        <br/>
         <button>Submit</button>
       </form>
     </div>
