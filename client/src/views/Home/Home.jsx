@@ -8,6 +8,7 @@ import "./Home.css"
 
 export default function Home() {
   return (
+    <div className="wrapper">
     
  
       <div className="section">
@@ -34,7 +35,7 @@ export default function Home() {
        
        
       </div>
-     
+      </div>
     
        
      
