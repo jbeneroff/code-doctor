@@ -14,7 +14,7 @@ export default function Navbar(props) {
   }
 
   return (
-    <div>
+    <div className="Nav">
       <div className="header">
         <Link to="/" className="logo" ><h1>Code Doctor</h1></Link>
         <div className="header-right">

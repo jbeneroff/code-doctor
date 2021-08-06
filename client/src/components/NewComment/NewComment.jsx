@@ -2,6 +2,7 @@ import React from 'react'
 import { createComment } from '../../services/comments'
 import { useHistory, useParams } from "react-router-dom"
 import { useState } from "react"
+import './NewComment.css'
 
 export default function NewComment(props) {
   const [input, setInput] = useState({ content: "" })
@@ -31,7 +32,7 @@ export default function NewComment(props) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form id='new-comment' onSubmit={handleSubmit}>
         <label>Add Your Solution Here</label>
         <br />
         <textarea id="content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab} />
