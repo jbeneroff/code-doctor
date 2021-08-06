@@ -109,6 +109,28 @@ div.C{
   box-shadow: 0 5px 10px 0;
 }
 
+div.Kimage{
+background-image:url("https://tse1.mm.bing.net/th?id=OIP.T_xe1hN6_-hZ5l2C9dxG1gHaEo&pid=Api&P=0&w=249&h=156");
+background-size: cover;
+position: relative;
+height:100%;
+}
+
+div.text{
+  background-color: red;
+  font-size: 10vw;
+  font-weight: bold;
+  margin: 0 auto; 
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  mix-blend-mode:screen;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media screen and (max-width: 600px){
   div.g4{
     display: grid;

@@ -95,7 +95,9 @@ export default function AboutUs(props) {
             currentEmployer={"GA"}
             email={"mailto:"}
           />
-            <div className="box 1"></div>
+              <div className="box 1">
+              <h1>Hi</h1>
+            </div>
             </div>
             
          <div className="C J">
@@ -109,7 +111,9 @@ export default function AboutUs(props) {
             currentEmployer={"GA"}
             email={"mailto:"}
               />
-              <div className="box 2"></div>
+              <div className="box 2">
+              <h1>Hi</h1>
+              </div>
             </div>
 
 <div className="C S">
@@ -123,7 +127,9 @@ export default function AboutUs(props) {
             currentEmployer={"GA"}
             email={"mailto:"}
               />
-               <div className="box 3"></div>
+              <div className="box 3">
+                <h1>Hi</h1>
+               </div>
               </div>
 
 
@@ -138,7 +144,11 @@ export default function AboutUs(props) {
             currentEmployer={"GA"}
             email={"mailto:kheyyon.parker@gmail.com"}
               />
-              <div className="box 4"></div>
+              <div className="box 4">
+                <div className="Kimage">
+                  <div class="text">RAME</div>
+              </div>
+              </div>
            </div>
             
            
