@@ -2,7 +2,9 @@ import './SignIn.css'
 import { useState } from 'react'
 import Layout from "../../components/Layout/Layout"
 import { signIn } from "../../services/users.js"
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
+
+
 
 export default function SignIn(props) {
   const [input, setInput] = useState({ email: "", password: "" });
@@ -26,36 +28,47 @@ export default function SignIn(props) {
   };
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      <div className="container">
+      
+      <div className="wrapper">
+        <h1>Login</h1>
+      
         <form onSubmit={handleSubmit}>
-          SignIn
-          <br /><hr className="solid" />
-          Please enter your credentials to login to Code Doctor<br />
-          <br />
+
+        <div className="text-area">
+        <span></span>
         <label>Email</label>
-        <br />
         <input
           id="email"
           type="email"
           value={input.email}
           onChange={handleInput}
-            placeholder="email"
             required={true}
         />
-        <br />
+         </div>
+          <div className="text-area">
+            <span></span>
         <label>Password</label>
-        <br />
         <input
             id="password"
             type="password"
             value={input.password}
             onChange={handleInput}
-            placeholder="password"
             required={true}
-        />
-        <br />
-        <button>Sign In</button>
+            />
+          </div>
+          
+          <div className="pass">Forgot Password?</div>
+        
+          <button>Login</button>
+
+          <Link to="/sign-up">
+          <div className="Sign-up">
+            <button>Not a member?</button>
+          </div>
+          </Link>
+           
         </form>
+       
         </div>
     </Layout>
   );

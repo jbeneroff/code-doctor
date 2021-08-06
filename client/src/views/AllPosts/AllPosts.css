@@ -8,12 +8,33 @@ input[type="text"]:focus {
   width: 40%;
 }
 
-/* #root > div > div > div > div:nth-child(2) > a {
-
-} */
-
 hr.searchLine {
   border-top: 3px solid black;
   border-radius: 8px;
   width: 50%;
 }
+
+#root > div > div > div > div:nth-child(2) > form{
+  border: 0px dotted black;
+  margin-bottom: 15px;
+}
+
+.postarea{
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0; 
+}
+
+.postarea::after{
+  content:"";
+  clear:left;
+  display: flex;
+}
+
+.time{
+  float: left;
+  color: #aaa;
+}
+

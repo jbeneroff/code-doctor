@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export default function ProfileCard(props) {
   return (
-    <div className="profile">
+    <div className="profile popup">
       <img src={props.src} alt={props.alt} />
       <h1>{props.name}</h1>
       <p className="title">{props.jobTitle}</p>
