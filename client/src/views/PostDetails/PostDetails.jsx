@@ -40,12 +40,12 @@ export default function PostDetails(props) {
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
-      return <Link to={`/update-post/${post._id}`}>Edit</Link>
+      return <Link id='edit' to={`/update-post/${post._id}`}>Edit</Link>
   }
 
   const displayDelete = (post) => {
     if (post.userId === props.user?.id)
-      return <button onClick={handleDelete}>Delete Post</button>
+      return <button id='delete-post' onClick={handleDelete}>Delete Post</button>
   }
 
   const handleDelete = async () => {
@@ -62,21 +62,24 @@ export default function PostDetails(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
       <div id='post'>
-        <h2>{post.title}</h2>
-        <p>{user?.username}</p>
+        <h2 id ='post-title' >{post.title}</h2>
+        <p id='username' >{user?.username}</p>
+        <hr />
         <div id='code'>
           <SyntaxHighLighter id='post-content' language="javascript" style={vs}>
             {`${post.content}`}
           </SyntaxHighLighter>
         </div>
+        {/* <p className='timestamp' >{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
         {displayEditLink(post)}
         {displayDelete(post)}
       </div>
+      <h3>Comments</h3>
       <div>
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
             if (props.user?.id === comment.userId._id) {
-              return <button onClick={handleDeleteComment}>Delete Comment</button>
+              return <button id='delete-comment' onClick={handleDeleteComment}>Delete Comment</button>
             }
           }
           const handleDeleteComment = async () => {
@@ -85,11 +88,11 @@ export default function PostDetails(props) {
           }
           return (
             <div id='comment' key={comment._id}>
-              <h4>{comment.userId.username}</h4>
+              <p id='commenter' >{comment.userId.username}</p>
               <SyntaxHighLighter id='comment-content' language="javascript" style={vs}>
                 {`${comment.content}`}
               </SyntaxHighLighter>
-              <p>{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
+              <p className='timestamp' >{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
               {displayDeleteComment(comment)}
             </div>
           )
