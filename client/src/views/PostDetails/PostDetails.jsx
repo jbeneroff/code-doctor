@@ -70,11 +70,13 @@ export default function PostDetails(props) {
             {`${post.content}`}
           </SyntaxHighLighter>
         </div>
-        {/* <p className='timestamp' >{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
+        {/* <p className="timestamp">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
+        <br />
         {displayEditLink(post)}
         {displayDelete(post)}
       </div>
-      <h3>Comments</h3>
+      <hr />
+      <h3 id='comments-header'>Comments</h3>
       <div>
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
@@ -94,6 +96,7 @@ export default function PostDetails(props) {
               </SyntaxHighLighter>
               <p className='timestamp' >{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
               {displayDeleteComment(comment)}
+              <hr />
             </div>
           )
         })}

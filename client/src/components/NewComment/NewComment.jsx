@@ -34,11 +34,10 @@ export default function NewComment(props) {
   return (
     <div>
       <form id='new-comment' onSubmit={handleSubmit}>
-        <h3>Add Your Solution Here</h3>
+        <h4 id='add-comment-header'>Add Your Solution Here</h4>
+        <textarea className="new-comment-content" id="content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
-        <textarea id="new-comment-content" valiue={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
-        <br/>
-        <button>Submit</button>
+        <button id='submit-comment'>Submit</button>
       </form>
     </div>
   )

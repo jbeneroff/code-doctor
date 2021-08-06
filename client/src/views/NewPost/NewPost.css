@@ -1,8 +1,10 @@
-#title {
-  width: 300px;
+.title {
+  width: 90%;
+  margin-bottom: 5px;
 }
 
-#new-post-content {
-  width: 300px;
+.new-post-content {
+  width: 90%;
   height: 150px;
+  padding: 3px;
 }
