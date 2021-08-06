@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: montserrat;
@@ -6,26 +6,30 @@ body {
   background: linear-gradient(#DDD6F3, #FAACA8);
   height: 100vh;
   
-}
-.wrapper {
+} */
+.authform {
   position:absolute;
-  top: 50%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
   background: white;
   border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  background: linear-gradient(#DDD6F3, #FAACA8);
 }
-.wrapper h1 {
+.authform h1 {
   text-align: center;
   padding: 0 0 20px 0;
   border-bottom: 1px solid silver;
 }
-.wrapper form {
+.authform form {
   padding: 0 40px;
   box-sizing: border-box;
 }
-form .text-area {
+.text-area {
   position: relative;
   border-bottom: 2px solid #ADADAD;
   margin: 30px 0;
@@ -58,7 +62,7 @@ form .text-area {
   height: 2px;
   background: #2691D9;
 }
-.wrapper button {
+.authform button {
   font-size: 20px;
   background-color:#147594 ;
   border: #6EA1B1 1px solid;

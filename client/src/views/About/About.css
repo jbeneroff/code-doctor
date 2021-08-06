@@ -58,7 +58,7 @@ div.K{
   grid-row-end: 4;
 } */
 
-#root > div > div > div:nth-child(2) > div{
+ div.wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;

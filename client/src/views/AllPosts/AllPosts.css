@@ -1,11 +1,11 @@
-input[type="text"] {
+.searchText[type="text"] {
   width: 10%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
-input[type="text"]:focus {
-  width: 40%;
+.searchText[type="text"]:focus {
+  width: 20%;
 }
 
 hr.searchLine {

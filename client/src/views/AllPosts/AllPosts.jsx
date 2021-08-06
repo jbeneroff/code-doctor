@@ -32,7 +32,7 @@ export default function AllPosts(props) {
     <div>
       <Layout user={props.user} setUser={props.setUser}>
         <form onSubmit={handleChange}>
-          <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
+          <input className="searchText" value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
         </form>
         {matches.map((post, key) => {
           return (

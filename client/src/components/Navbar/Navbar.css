@@ -3,6 +3,7 @@
   margin: 0;
   background: linear-gradient(-45deg,#2193b0,#6dd5ed,#cc2b5e, #753a88 );
   padding: 30px 10px;
+  border: 3px solid #fff;
 }
 
 
@@ -19,7 +20,6 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  /*Find a better font like lato or something - look up typography pairs*/
  letter-spacing: 2px;
- border: 3px solid #fff;
 }
 
 .header a.logo{
@@ -47,14 +47,14 @@ div.Logo{
   margin-top: 0;
 }
 
-#root > div > div > div:nth-child(2){
+/* #root > div > div > div:nth-child(2){
   display: flex;
   flex-direction: column;
   width: 100%;
   
-}
+} */
 
-#root > div > div > div.header > div > div:nth-child(1){
+ div.header > div > div:nth-child(1){
   display: flex;
   margin: center;
 }
@@ -66,7 +66,7 @@ div.Logo{
   color: red;
 }
 
-#root > div > div > div > div.header > div:nth-child(2) > a:active{
+div.header > div:nth-child(2) > a:active{
   background-color: dodgerblue;
 }
 
@@ -78,6 +78,14 @@ div.nav{
  
 }
 
+/* @keyframes move{
+  0%{
+
+  }
+  10%{
+
+  }
+} */
 
 
 /*Media Query Section*/
