@@ -109,22 +109,22 @@ A forum for all things coding/programming/development. Users can create accounts
 
 | Component                              | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Proposal and Approval          |    H     |      6hrs      |           |        |
-| Front End Components          |    H     |      3hrs      |           |         |
-| Front End Views          |    H     |      3hrs      |           |         |
-| Front End Services        |    H     |      3hrs      |          |         |
-| Front End Routes          |    H     |      3hrs      |           |         |
-| Back End Database          |    H     |      3hrs      |           |         |
-| Back End Authentication/Authorization         |    H     |      3hrs      |          |       |
-| Front End Authentication/Authorization         |    H     |      3hrs      |           |        |
-| Back End Models         |    H     |      3hrs      |           |         |
-| Back End Controllers          |    H     |      3hrs      |          |         |
-| Back End Routes         |    H     |      3hrs      |         |         |
-| CSS styling         |    H     |      6hrs      |         |         |
-| Media Queries        |    H     |      2hrs      |         |         |
-| Debugging        |    H     |      6hrs      |         |         |
-| PMVP code snippets         |    M     |      3hrs      |           |        |
-| PMVP Search bar         |    M     |      3hrs      |          |         |
+| Project Proposal and Approval          |    H     |      6hrs      |      6hrs     |     6hrs   |
+| Front End Components          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Front End Views          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Front End Services        |    H     |      3hrs      |     3hrs     |     3hrs    |
+| Front End Routes          |    H     |      3hrs      |      3hrs     |     3hrs    |
+| Back End Database          |    H     |      3hrs      |      3hrs     |     3hrs    |
+| Back End Authentication/Authorization         |    H     |      3hrs      |     3hrs     |   3hrs    |
+| Front End Authentication/Authorization         |    H     |      3hrs      |     3hrs      |    3hrs    |
+| Back End Models         |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Back End Controllers          |    H     |      3hrs      |     3hrs     |    3hrs     |
+| Back End Routes         |    H     |      3hrs      |     3hrs    |    3hrs     |
+| CSS styling         |    H     |      6hrs      |     6hrs    |         |
+| Media Queries        |    H     |      2hrs      |     1hrs    |    1hrs     |
+| Debugging        |    H     |      6hrs      |     6hrs    |    6hrs     |
+| PMVP code snippets         |    M     |      3hrs      |     1hrs      |    1hrs    |
+| PMVP Search bar         |    M     |      3hrs      |     1hrs     |     1hrs    |
 | PMVP voting system         |    M     |      3hrs      |         |         |
 | PMVP mark comments as answer         |    M     |      3hrs      |          |         |
 | Total |    H     |           |          |        |
@@ -134,11 +134,11 @@ A forum for all things coding/programming/development. Users can create accounts
 | Day        | Deliverable                                          | Status   |
 | ---------- | ---------------------------------------------------- | -------- |
 | July 30    | Project Ideas/ README.md   | Complete |
-| Aug 2    | README/ Proposal | Incomplete |
-| Aug 3    | PseudoCode/Coding                 | Incomplete |
-| Aug 4   |  Coding/MVP                                               | Incomplete |
-| Aug 5    | MVP                                           | Incomplete |
-| Aug 6 | MVP/PMVP                                                 | Incomplete |
+| Aug 2    | README/ Proposal | Complete |
+| Aug 3    | PseudoCode/Coding                 | Complete |
+| Aug 4   |  Coding/MVP                                               | Complete |
+| Aug 5    | MVP                                           | Complete |
+| Aug 6 | MVP/PMVP                                                 | Complete |
 | Aug 9    | PMVP                                       | Incomplete |
 | Aug 10    | Presentations                                        | Incomplete |
 
