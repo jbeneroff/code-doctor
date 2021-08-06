@@ -1,26 +1,31 @@
 
 .header{
   margin: 0;
-  background-color: #f1f1f1;
+  background: linear-gradient(-45deg,#2193b0,#6dd5ed,#cc2b5e, #753a88 );
   padding: 30px 10px;
 }
 
 
 .header a {
   /* //float: left; */
-  color: black;
+  /* color: black; */
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 10px; 
   line-height: 5px;
   border-radius: 4px;
-
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ /*Find a better font like lato or something - look up typography pairs*/
+ letter-spacing: 2px;
+ border: 3px solid #fff;
 }
 
 .header a.logo{
   font-size: 15px;
   font-weight: bold;
+ 
 }
 
 .header a:hover{
@@ -35,6 +40,7 @@
 
 .header-right{
   float: none;
+
 }
 
 div.Logo{
@@ -45,6 +51,7 @@ div.Logo{
   display: flex;
   flex-direction: column;
   width: 100%;
+  
 }
 
 #root > div > div > div.header > div > div:nth-child(1){
@@ -63,8 +70,13 @@ div.Logo{
   background-color: dodgerblue;
 }
 
-
-
+div.nav{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  font-size: 10px;
+ 
+}
 
 
 
