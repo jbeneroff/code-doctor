@@ -1,5 +1,5 @@
 
-:root{
+.block {
   --gradient: linear-gradient(
     -45deg,
     #2193b0,
@@ -136,7 +136,7 @@ background-position: 0 50%;
     float: none;
   }
 
-  #root > div > div > div > div.header > div:nth-child(2) > a:active{
+ div.header > div:nth-child(2) > a:active{
     background-color: dodgerblue;
   }
 
