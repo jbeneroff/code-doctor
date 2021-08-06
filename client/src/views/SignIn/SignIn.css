@@ -69,12 +69,7 @@ form .text-area {
 
 }
 
-.text-area input:focus ~ label,
-.text-area input:valid ~ label {
-  top: -5px;
-  color: #2691d9;
 
-}
 
 .wrapper button {
   font-size: 20px;
