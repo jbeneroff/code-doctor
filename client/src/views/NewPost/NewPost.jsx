@@ -44,11 +44,11 @@ export default function NewPost(props) {
 
         <label>Title</label>
         <br/>
-        <input id="title" value={input.title} onChange={handleChange} />
+        <input className='title' id="title" value={input.title} onChange={handleChange} />
         <br/>
         <label>Paste Your Code Here</label>
         <br/>
-        <textarea id="new-post-content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
+        <textarea className='new-post-content' id="content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
         <button>Submit</button>
 

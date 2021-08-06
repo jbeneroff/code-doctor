@@ -1,9 +1,9 @@
-#title {
+.title {
   width: 90%;
   margin-bottom: 5px;
 }
 
-#new-post-content {
+.new-post-content {
   width: 90%;
   height: 150px;
   padding: 3px;
