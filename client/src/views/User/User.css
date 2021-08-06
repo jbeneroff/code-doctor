@@ -1,24 +1,9 @@
-.search-text[type="text"] {
-  width: 10%;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-.search-text[type="text"]:focus {
-  width: 20%;
-}
-
-.searchbar {
-  border: 0px dotted black;
-  margin-bottom: 15px;
-}
-
 .postarea {
   border: 2px solid #dedede;
   background-color: #f1f1f1;
   border-radius: 12px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 
 .postarea::after {
