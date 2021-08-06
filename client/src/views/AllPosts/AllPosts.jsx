@@ -34,7 +34,6 @@ export default function AllPosts(props) {
         <form onSubmit={handleChange}>
           <input value={input} type="text" placeholder="Search" onChange={(e) => setInput(e.target.value)} />
         </form>
-
         {matches.map((post, key) => {
           return (
             <div className="postarea">
@@ -43,8 +42,8 @@ export default function AllPosts(props) {
               <p className="time">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p>
               {/* add in logic for formatting code for pmvp */}
               {/* <p>{post.content}</p> */}
-              </Link>
-              </div>
+            </Link>
+            </div>
           )
         })}
       </Layout>

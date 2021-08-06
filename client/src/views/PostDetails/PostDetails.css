@@ -1,7 +1,64 @@
 #post {
-  text-align: left;
+  text-align: center;
 }
 
 #comment {
+  text-align: center;
+}
+
+#post-content {
   text-align: left;
+  margin: auto;
+  width: 90%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+hr {
+  margin: auto;
+  max-width: 90%;
+  color: white;
+}
+
+#comment-content {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#post-title {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+#username {
+  text-align: left;
+  margin: 5px auto;
+  width: 90%;
+}
+
+#commenter {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.timestamp {
+  text-align: right;
+  margin: auto;
+  width: 90%;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
 }
