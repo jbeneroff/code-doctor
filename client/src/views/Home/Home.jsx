@@ -5,11 +5,13 @@ import "./Home.css"
 
 
 
-
+{/*img img sec1 sec1 
+   img2 img2 img2 img2
+   sec2 sec2 sec2 sec2 
+  sect sect sect sect
+*/}
 export default function Home() {
   return (
-    
- 
       <div className="section">
       <h1>Welcome to Code Doctor!</h1>
       <h3>A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community! </h3>
