@@ -70,8 +70,11 @@ export default function SignUp(props) {
             <button className="already-button">Already a Member?</button>
             
           </form>
-          </div>
+
         </div>
+        
+      </div>
+      
     </Layout>
   );
 }
