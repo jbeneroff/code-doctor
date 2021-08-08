@@ -6,7 +6,7 @@ import './UpdatePost.css'
 
 
 export default function UpdatePost(props) {
-  const [input, setInput] = useState({ title: "", content: "" })
+  const [input, setInput] = useState({ title: props.title || '', content: "" })
   const [post, setPost] = useState({ title: "", content: "" })
   const history = useHistory()
   const { id } = useParams()

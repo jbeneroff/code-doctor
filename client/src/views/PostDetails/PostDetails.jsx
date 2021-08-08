@@ -40,7 +40,7 @@ export default function PostDetails(props) {
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
       return (
-        <Link id='edit' to={`/update-post/${post._id}`}>
+        <Link id='edit' to={`/update-post/${post._id}`} >
           <button>Edit</button>
         </Link>
       )
