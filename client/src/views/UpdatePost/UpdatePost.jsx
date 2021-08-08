@@ -29,6 +29,7 @@ export default function UpdatePost(props) {
     const fetchPost = async () => {
       const data = await getPost(id)
       setPost(data)
+      setInput(data)
     }
     fetchPost()
     // eslint-disable-next-line
