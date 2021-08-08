@@ -3,6 +3,7 @@ import Layout from "../../components/Layout/Layout"
 import { signUp } from "../../services/users.js"
 import { useHistory } from "react-router-dom";
 
+
 export default function SignUp(props) {
   const [input, setInput] = useState({ username: "", email: "", password: "" });
   const history = useHistory();
@@ -23,7 +24,10 @@ export default function SignUp(props) {
     }));
   };
   return (
+   
     <Layout>
+      <div className="particles">
+        
       SignUp
       <form onSubmit={handleSubmit}>
         <label>Username</label>
@@ -54,7 +58,9 @@ export default function SignUp(props) {
         />
         <br />
         <button>Sign Up</button>
-      </form>
+          </form>
+    
+        </div>
     </Layout>
   );
 }
