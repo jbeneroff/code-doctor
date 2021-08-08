@@ -19,20 +19,20 @@ export default function User(props) {
 
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      {/* <h2>{props.user.username}</h2> */}
-      {/* <h3>{`${props.user.username}'s Posts`}</h3> */}
+      <h2>{props.user.username}</h2>
+      <h3>{`${props.user.username}'s Posts`}</h3>
       {userPosts.map((post, key) => {
         return (
           <div key={post._id}>
             <Link to={`/posts/${post._id}`}>
               <h3>{post.title}</h3>
-              {/* add in logic for formatting code for pmvp */}
-              {/* <p>{post.content}</p> */}
+              add in logic for formatting code for pmvp
+              <p>{post.content}</p>
             </Link>
           </div>
         )
       })}
-      {/* <h3>{`${props.user.username}'s Comments`}</h3> */}
+      <h3>{`${props.user.username}'s Comments`}</h3>
     </Layout>
   )
 }
