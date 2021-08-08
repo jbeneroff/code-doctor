@@ -65,7 +65,6 @@ export default function SignUp(props) {
               />
             </div>
             
-       
             <button className="signup-button">Create Account</button>
 
             <button className="already-button">Already a Member?</button>
