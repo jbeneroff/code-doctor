@@ -30,12 +30,12 @@ export default function Home() {
             <div className="slogan-area">
       
         <p className="para">Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.</p>
-              <p className="para1">See what's up in the code doctor community</p>
+              <p className="para">See what's up in the code doctor community</p>
               <Link to="/posts">
          <button className="b1">See Community Posts</button>
            </Link>
-           <h2>Do You Want to Start Sharing Your Code?</h2>
-        <h4>Create an Account & Get Started!</h4>
+           <h2 className="question">Do You Want to Start Sharing Your Code?</h2>
+        <h4 className="engage">Create an Account & Get Started!</h4>
         <div className="BTN">
            <Link to="/sign-up">
             <button className="b1">Sign Up</button>
