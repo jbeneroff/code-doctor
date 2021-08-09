@@ -2,13 +2,9 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import "./Home.css"
 
-
-
-
 export default function Home() {
   return (
     
- 
       // <div className="section">
       // <h1>Welcome to Code Doctor!</h1>
       // <h3>A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community! </h3>
@@ -52,7 +48,6 @@ export default function Home() {
       <div className="img2">
       <img className="owners" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpftHNILHez9wYrHFa3qFE1mvc-20sWDYBfwqHipSUTfkuMlhdl3EzNPQIsxO4QSyd1Y&usqp=CAU" alt="owners?"/>
       </div> */}
-
       <div className="CTA">
         Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.
         <br/>

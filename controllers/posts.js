@@ -11,8 +11,6 @@ export const getAllPosts = async (req, res) => {
   }
 }
 
-
-
 export const getPost = async (req, res) => {
   try {
     const {id} = req.params
@@ -38,14 +36,13 @@ export const getAllUserPosts = async (req, res) => {
   }
 }
 
-
 export const createPost = async (req, res) => {
   try {
     const post = new Post(req.body)
     post.userId = req.user
     await post.save()
     const user = await User.findById(req.user)
-   user.posts.push(post) 
+    user.posts.push(post) 
     await user.save()
     res.status(201).json(post)
   } catch (e) {
