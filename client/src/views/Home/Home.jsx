@@ -1,8 +1,7 @@
 import React from 'react'
-
 import { Link } from "react-router-dom"
 import "./Home.css"
-
+import doctor from '../../../public/doctor.jpg'
 
 
 
@@ -16,10 +15,6 @@ export default function Home() {
           <Link to="/posts">
         <button className="b1">See Community Posts</button>
           </Link>
-       
-    
-       
-
           <h2>Do You Want to Start Sharing Your Code?</h2>
           <h4>Create an Account & Get Started!</h4>
           <Link to="/sign-up">
@@ -29,12 +24,16 @@ export default function Home() {
       <Link to="/sign-in">
            <button className="b3">Sign In</button>
           </Link>
-
-        
-       
-       
       </div>
      
+    // <div className="theStory">
+    //   <div className="Homebg">
+    //     <div className="image-area">
+    //       <img className="codeDoctor" src={doctor}/>
+    //     </div>
+
+    //   </div>
+    // </div>
     
        
      

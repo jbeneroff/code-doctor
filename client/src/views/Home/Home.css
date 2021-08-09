@@ -69,5 +69,36 @@
   font-weight: bold;
   margin-top: 20px;
 }
+ 
+/* 
+div.theStory{
+  height: 50vh; 
+  width: 100vw;
+  background: 0 0 blueviolet;
+  position: relative;
+}
 
+div.Homebg{
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0; 
+  left: 0;
+}
 
+div.image-area{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0; 
+  left: 0;
+  height: 100%;
+}
+
+img.codeDoctor{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+} */
