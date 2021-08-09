@@ -139,13 +139,13 @@ h1.slogan {
 .slogan-area {
   position: absolute;
   top: 40%;
-  left: 82%;
+  left: 72%; 
   transform: translate(-50%, -50%);
   z-index: 1;
-  width: 35%;
+  width: 50%;
   height: 53vh;
   border-radius: 12px;
-  background: linear-gradient(0deg, #085078, #85d8ce);
+  background: white;
 }
 
 .BTN {
@@ -154,12 +154,12 @@ h1.slogan {
   justify-content: center;
 }
 
-button.b1 {
-  background: linear-gradient(45deg, #bdc3c7, #2c3e50);
-  border: none;
-  border-radius: 6px;
-  padding: 5px 20px;
-  color: white;
+button.b1{
+  background: linear-gradient(0deg, #085078, #85D8CE);
+        border: none;
+        border-radius: 6px;
+        padding: 5px 20px;
+        color: white;
 }
 
 button.b1:hover {
@@ -179,59 +179,71 @@ p.para1 {
 }
 
 @media screen and (max-width: 786px) {
-  div.body {
-    font-size: 5px;
-  }
-  p.para {
-    font-size: 0.5rem;
-  }
-  p.para1 {
-    font-size: 0.5rem;
-  }
-
-  .BTN {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  button.b1 {
-    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
-    border: none;
-    border-radius: 6px;
-    padding: 0 5px;
-    color: white;
-    font-size: xx-small;
-  }
-
-  button.b1:hover {
-    cursor: pointer;
-  }
-
-  button.b1:active {
-    opacity: 0.7;
-  }
-
-  .slogan-area {
-    position: absolute;
-    top: 40%;
-    left: 82%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 30%;
-    height: 15vh;
-    border-radius: 12px;
-    background: linear-gradient(0deg, #085078, #85d8ce);
-    font-size: 5px;
-    width: 75vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  h1.slogan {
-    color: #000;
-    font-size: 0.625rem;
-    grid-area: header;
-    margin-top: 0;
-  }
+div.body{
+  font-size: 5px;
 }
+  p.para{
+   font-size: 1.2rem;
+ }
+ 
+ p.para1{
+  font-size: 1.5rem;
+}
+
+.BTN{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+button.b1{
+  background: linear-gradient(0deg, #085078, #85D8CE);
+        border: none;
+        border-radius: 6px;
+        padding: 5px;
+        color: white;
+        font-size: large;
+}
+
+button.b1:hover{
+  cursor: pointer;
+}
+
+button.b1:active{
+  opacity: 0.7;
+}
+
+.slogan-area{
+  position: absolute;
+  top: 40%;
+  left: 82%; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 30%;
+  height: 65vh;
+  border-radius: 12px;
+  background: white;
+  font-size: 5px;
+  width: 75vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1.slogan{
+  
+  color: #000;
+  font-size: 1.5rem;
+  grid-area: header;
+  margin-top: 0;
+}
+
+.question{
+  font-size: large;
+}
+
+.engage{
+  font-size: large;
+}
+}
+
