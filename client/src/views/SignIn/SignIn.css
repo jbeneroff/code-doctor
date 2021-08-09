@@ -5,12 +5,12 @@
   background-repeat: no-repeat;
 }
 .authform {
-  position:absolute;
-  top: 67%; 
-  left: 50%; 
+  position: absolute;
+  top: 67%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  height: 700px;
+  height: 550px;
   background: white;
   border-radius: 10px;
   border-color: 2px solid black;
@@ -22,12 +22,12 @@
   text-align: center;
   padding: 0 0 20px 0;
   border-bottom: 1px solid lightblue;
-  color: darkblue
+  color: darkblue;
 }
 .authform form {
   padding: 0 40px;
   box-sizing: border-box;
-  border: 2px yellow
+  border: 2px yellow;
 }
 .text-area {
   position: relative;
@@ -43,7 +43,7 @@
   background: none;
   outline: none;
 }
-.text-area label {
+.sign-in-title {
   position: absolute;
   top: 0px;
   left: 10px;
@@ -52,20 +52,21 @@
   font-size: 16px;
   pointer-events: none;
   transition: -5s;
-  
+  margin: 0px;
 }
-.text-area span::before{
+
+#title-password {
+  left: 27px;
+}
+.text-area span::before {
   content: "";
   position: absolute;
   top: 40px;
   left: 0;
   width: 0%;
   height: 2px;
-  background: #2691D9;
+  background: #2691d9;
 }
-
-
-
 
 .authform button {
   background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
@@ -75,25 +76,22 @@
   cursor: pointer;
   color: white;
   font-family: "Raleway SemiBold", sans-serif;
-  height: 70px;
+  height: 50px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 30px;
   transition: 0.25s;
-  width: 220px;
+  width: 200px;
   margin-right: 20px;
   margin-left: 20px;
   font-size: 20px;
-  
 }
 
-
 @media only screen and (max-width: 650px) {
-
   .authform {
-    position:absolute;
+    position: absolute;
     transform: translate(-50%, -50%);
     width: 350px;
-    height: 550px;
+    height: 380px;
     background: white;
     border-radius: 10px;
     border-color: 2px solid black;
@@ -105,12 +103,12 @@
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid lightblue;
-    color: darkblue
+    color: darkblue;
   }
   .authform form {
     padding: 0 40px;
     box-sizing: border-box;
-    border: 2px yellow
+    border: 2px yellow;
   }
   .text-area {
     position: relative;
@@ -126,7 +124,7 @@
     background: none;
     outline: none;
   }
-  .text-area label {
+  /* .text-area label {
     position: absolute;
     color: black;
     transform: translate(-50%);
@@ -134,21 +132,17 @@
     pointer-events: none;
     transition: -5s;
     margin-left: 0;
-    
-  }
-  .text-area span::before{
+  } */
+  .text-area span::before {
     content: "";
     position: absolute;
     top: 40px;
     left: 0;
     width: 0%;
     height: 2px;
-    background: #2691D9;
+    background: #2691d9;
   }
-  
-  
-  
-  
+
   .authform button {
     background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
     border: none;
@@ -157,14 +151,13 @@
     cursor: pointer;
     color: white;
     font-family: "Raleway SemiBold", sans-serif;
-    height: 70px;
+    height: 40px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
     transition: 0.25s;
     width: 130px;
     margin-right: 20px;
     margin-left: 20px;
     font-size: 15px;
-    
   }
 }
