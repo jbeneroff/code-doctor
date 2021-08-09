@@ -146,7 +146,7 @@ export default function AboutUs(props) {
               />
               <div className="box 4">
                 <div className="Kimage">
-                  <div class="text">RAME</div>
+                  <div className="text">RAME</div>
               </div>
               </div>
            </div>

@@ -20,7 +20,6 @@ export default function PostDetails(props) {
     const fetchPost = async () => {
       const data = await getPost(id)
       setPost(data)
-      console.log(data.comments)
       setComments(data.comments)
     }
     fetchPost()
@@ -40,7 +39,11 @@ export default function PostDetails(props) {
 
   const displayEditLink = (post) => {
     if (post.userId === props.user?.id)
-      return <Link id='edit' to={`/update-post/${post._id}`}>Edit</Link>
+      return (
+        <Link id='edit' to={`/update-post/${post._id}`}>
+          <button>Edit</button>
+        </Link>
+      )
   }
 
   const displayDelete = (post) => {
@@ -66,11 +69,11 @@ export default function PostDetails(props) {
         <p id='username' >{user?.username}</p>
         <hr />
         <div id='code'>
-          <SyntaxHighLighter id='post-content' language="javascript" style={vs}>
+          <SyntaxHighLighter id='post-content' language="javascript" style={vs} customStyle={{ backgroundColor: 'rgb(238, 238, 238)'}}>
             {`${post.content}`}
           </SyntaxHighLighter>
         </div>
-        {/* <p className="timestamp">{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
+        {/* <p className='timestamp' >{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
         <br />
         {displayEditLink(post)}
         {displayDelete(post)}
@@ -91,7 +94,7 @@ export default function PostDetails(props) {
           return (
             <div id='comment' key={comment._id}>
               <p id='commenter' >{comment.userId.username}</p>
-              <SyntaxHighLighter id='comment-content' language="javascript" style={vs}>
+              <SyntaxHighLighter id='comment-content'  language="javascript" style={vs} customStyle={{ backgroundColor: 'rgb(238, 238, 238)' }}>
                 {`${comment.content}`}
               </SyntaxHighLighter>
               <p className='timestamp' >{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>

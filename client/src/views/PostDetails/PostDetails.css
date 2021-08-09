@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap");
+
 #post-content {
   text-align: left;
   margin: 10px auto 5px auto;
   width: 88.5%;
   border-style: solid;
-  border-color: lightgrey;
+  border-color: white;
   border-width: 1px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 hr {
@@ -20,28 +22,32 @@ hr {
   margin: auto;
   width: 88.5%;
   border-style: solid;
-  border-color: lightgrey;
+  border-color: white;
   border-width: 1px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 #post-title {
   text-align: left;
   margin: 20px auto 5px auto;
   width: 90.5%;
+  font-family: "Roboto", sans-serif;
+  font: 400;
 }
 
 #username {
   text-align: left;
   margin: 5px auto;
   width: 90%;
+  font-size: 15px;
 }
 
 #commenter {
   text-align: left;
   margin: 5px auto;
   width: 90%;
+  font-size: 12px;
 }
 
 .timestamp {

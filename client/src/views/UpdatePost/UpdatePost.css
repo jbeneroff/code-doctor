@@ -1,17 +1,17 @@
-.title {
+.update-title {
   width: 90%;
   margin-bottom: 5px;
 }
 
-.new-post-content {
+.update-content {
   width: 90%;
   height: 150px;
   padding: 3px;
 }
 
 @media only screen and (min-width: 768px) {
-  .new-post-content,
-  .title {
+  .update-content,
+  .update-title {
     width: 75%;
   }
 }
