@@ -147,97 +147,11 @@ h1.slogan {
   border-radius: 12px;
   background: linear-gradient(0deg, #085078, #85d8ce);
 }
-<<<<<<< HEAD
-.content {
-  height: 40vh;
-  width: 100%;
-  background-color: linear-gradient(90deg, #bdc3c7, #2c3e50);
-  grid-area: content;
-  color: white;
-  font-size: 2rem;
-}
-
-.img1 {
-  height: 40vh;
-  width: 100%;
-  background-color: red;
-  grid-area: img1;
-}
-
-.content1 {
-  height: 40vh;
-  width: 100%;
-  background: linear-gradient(90deg, #2c3e50, #bdc3c7);
-  grid-area: content1;
-  font-size: 2rem;
-  color: white;
-}
-
-.img2 {
-  height: 40vh;
-  width: 100%;
-  background-color: orange;
-  grid-area: img2;
-}
-
-.CTA {
-  height: 20vh;
-  width: 100%;
-  background: linear-gradient(180deg, #bdc3c7, #2c3e50);
-
-  grid-area: CTA;
-}
-
-img.coders {
-  object-fit: cover;
-  height: 40vh;
-}
-
-img.owners {
-  object-fit: cover;
-  height: 40vh;
-}
-=======
-
->>>>>>> 391db757e49f1df22f613ac0ee2f511d6bede8fc
 
 .BTN {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-<<<<<<< HEAD
-button.b3 {
-  background: linear-gradient(146deg, #bdc3c7, #2c3e50);
-  border: none;
-  border-radius: 6px;
-  padding: 5px 20px;
-  color: white;
-}
-
-button.b3:hover {
-  cursor: pointer;
-}
-
-button.b3:active {
-  opacity: 0.7;
-}
-
-button.b2 {
-  background: linear-gradient(146deg, #bdc3c7, #2c3e50);
-  border: none;
-  border-radius: 6px;
-  padding: 5px 20px;
-  color: white;
-}
-
-button.b2:hover {
-  cursor: pointer;
-}
-
-button.b2:active {
-  opacity: 0.7;
 }
 
 button.b1 {
@@ -246,16 +160,6 @@ button.b1 {
   border-radius: 6px;
   padding: 5px 20px;
   color: white;
-=======
-button.b1{
-  background: linear-gradient(
-    45deg
-    , #bdc3c7, #2c3e50);
-        border: none;
-        border-radius: 6px;
-        padding: 5px 20px;
-        color: white;
->>>>>>> 391db757e49f1df22f613ac0ee2f511d6bede8fc
 }
 
 button.b1:hover {
@@ -275,14 +179,12 @@ p.para1 {
 }
 
 @media screen and (max-width: 786px) {
-<<<<<<< HEAD
   div.body {
     font-size: 5px;
   }
   p.para {
     font-size: 0.5rem;
   }
-
   p.para1 {
     font-size: 0.5rem;
   }
@@ -317,7 +219,7 @@ p.para1 {
     transform: translate(-50%, -50%);
     z-index: 1;
     width: 30%;
-    height: 33vh;
+    height: 15vh;
     border-radius: 12px;
     background: linear-gradient(0deg, #085078, #85d8ce);
     font-size: 5px;
@@ -332,65 +234,4 @@ p.para1 {
     grid-area: header;
     margin-top: 0;
   }
-=======
-div.body{
-  font-size: 5px;
-}
-  p.para{
-   font-size: 0.5rem;
- }
- 
- p.para1{
-  font-size: 0.5rem;
-}
-
-.BTN{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
-button.b1{
-  background: linear-gradient(
-    45deg
-    , #bdc3c7, #2c3e50);
-        border: none;
-        border-radius: 6px;
-        padding: 0 5px;
-        color: white;
-        font-size: xx-small;
-}
-
-button.b1:hover{
-  cursor: pointer;
-}
-
-button.b1:active{
-  opacity: 0.7;
-}
-
-.slogan-area{
-  position: absolute;
-  top: 40%;
-  left: 82%; 
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 30%;
-  height: 15vh;
-  border-radius: 12px;
-  background: linear-gradient(0deg, #085078, #85D8CE);
-  font-size: 5px;
-  width: 75vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-h1.slogan{
-  
-  color: #000;
-  font-size: 0.625rem;
-  grid-area: header;
-  margin-top: 0;
->>>>>>> 391db757e49f1df22f613ac0ee2f511d6bede8fc
 }
