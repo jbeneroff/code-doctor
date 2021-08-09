@@ -124,43 +124,46 @@ export default function SignUp(props) {
         }}
       />
         <div className="auth-form">
-          <h1>Sign Up</h1>
 
+            <h1>Sign Up</h1>
           <form onSubmit={handleSubmit}>
+            
             <div className="text-field">
             <span></span>
-        <label>Username</label>
+            <label>Username</label>
         
-        <input
-          id="username"
-          type="text"
-          value={input.username}
-          onChange={handleInput}
-        />
+            <input
+            id="username"
+            type="text"
+            value={input.username}
+            onChange={handleInput}
+            />
             </div>
+
             <div className="text-field">
             <span></span>
-        <label>Email</label>
+            <label>Email</label>
         
-        <input
-          id="email"
-          type="email"
-          value={input.email}
-          onChange={handleInput}
+            <input
+            id="email"
+            type="email"
+            value={input.email}
+            onChange={handleInput}
               />
             </div>
+
             <div className="text-field">
               <span></span>
-       
-        <label>Password</label>
+            <label>Password</label>
         
-        <input
-          id="password"
-          type="password"
-          value={input.password}
-          onChange={handleInput}
+            <input
+            id="password"
+            type="password"
+            value={input.password}
+            onChange={handleInput}
               />
             </div>
+            
             <Link to="/user/:id">
             <button className="signup-button">Create Account</button>
             </Link>
