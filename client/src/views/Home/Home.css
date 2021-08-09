@@ -1,12 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
 
-} */
-
-/* body {
-
-} */
 
 .section {
   background-image: url("./bg.jpg");
@@ -29,7 +21,7 @@
 .section h1 {
   font-size: 120px;
   line-height: 1.2;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 
 }
 
@@ -69,7 +61,7 @@
   border: #6EA1B1 1px solid;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .section p {

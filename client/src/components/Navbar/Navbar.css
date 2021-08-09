@@ -1,5 +1,12 @@
+
 .Nav {
-  --gradient: linear-gradient(-45deg, #2193b0, #6dd5ed, #cc2b5e, #753a88);
+  --gradient: linear-gradient(
+    -45deg,
+    #2193b0,
+    #6dd5ed,
+    #cc2b5e, 
+    #753a88 
+  );
 }
 
 .header {

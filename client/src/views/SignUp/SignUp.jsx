@@ -2,6 +2,7 @@ import {useState} from 'react'
 import Layout from "../../components/Layout/Layout"
 import { signUp } from "../../services/users.js"
 import { useHistory } from "react-router-dom";
+import "./SignUp.css"
 
 export default function SignUp(props) {
   const [input, setInput] = useState({ username: "", email: "", password: "" });
@@ -24,37 +25,56 @@ export default function SignUp(props) {
   };
   return (
     <Layout>
-      SignUp
-      <form onSubmit={handleSubmit}>
+      <div className="background">
+        <div className="auth-form">
+          <h1>Sign Up</h1>
+
+          <form onSubmit={handleSubmit}>
+            <div className="text-field">
+            <span></span>
         <label>Username</label>
-        <br />
+        
         <input
           id="username"
           type="text"
           value={input.username}
           onChange={handleInput}
         />
-        <br />
+            </div>
+            <div className="text-field">
+            <span></span>
         <label>Email</label>
-        <br />
+        
         <input
           id="email"
           type="email"
           value={input.email}
           onChange={handleInput}
-        />
-        <br />
+              />
+            </div>
+            <div className="text-field">
+              <span></span>
+       
         <label>Password</label>
-        <br />
+        
         <input
           id="password"
           type="password"
           value={input.password}
           onChange={handleInput}
-        />
-        <br />
-        <button>Sign Up</button>
-      </form>
+              />
+            </div>
+            
+            <button className="signup-button">Create Account</button>
+
+            <button className="already-button">Already a Member?</button>
+            
+          </form>
+
+        </div>
+        
+      </div>
+      
     </Layout>
   );
 }

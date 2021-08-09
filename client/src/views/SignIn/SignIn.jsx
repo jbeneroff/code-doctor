@@ -28,7 +28,7 @@ export default function SignIn(props) {
   };
   return (
     <Layout user={props.user} setUser={props.setUser}>
-      
+      <div className="bg">
       <div className="authform">
         <h1>Login</h1>
       
@@ -59,19 +59,23 @@ export default function SignIn(props) {
             />
           </div>
           
-          <div className="pass">Forgot Password?</div>
+            <div className="pass">Forgot Password?</div>
+            
+            
         
-          <button>Login</button>
+          <button className="login">Login</button>
 
           <Link to="/sign-up">
           <div className="Sign-up">
-            <button>Not a member?</button>
+            <button className="Not">Don't Have an Account Yet?</button>
           </div>
           </Link>
            
         </form>
        
-        </div>
+      </div>
+      </div>
+      
     </Layout>
   );
 }
