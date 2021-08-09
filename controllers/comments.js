@@ -12,28 +12,21 @@ export const getAllComments = async (req, res) => {
 }
 
 export const createComment = async (req, res) => {
- 
   try {
     //Makes new comment
     const comment = new Comment(req.body)
     comment.userId = req.user
     await comment.save()
-    //--------- This section works --- User -> Comments
-    console.log(comment)
     const user = await User.findById(req.user)
     user.comments.push(comment)
     await user.save()
-    //---------Issue: Can't link Comments to Post
-    
-    // const user = await User.findById(userId).populate('user_id')
-  
-    const post = await Post.findById(req.params.id)    // console.log(post) 
+    const post = await Post.findById(req.params.id)
     post.comments.push(comment)
-     await post.save()
-      res.status(201).json(post)
-    } catch (e) {
-      res.status(500).json({error: e.message})
-    }
+    await post.save()
+    res.status(201).json(post)
+  } catch (e) {
+    res.status(500).json({error: e.message})
+  }
 }
 
 export const getComment = async (req, res) => {

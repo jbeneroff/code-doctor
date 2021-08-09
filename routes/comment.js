@@ -5,17 +5,7 @@ import {getAllComments, createComment, getComment, updateComment, deleteComment}
 const router = Router({mergeParams: true})
 
 
-// router.get('/comments', getAllComments)
-
-//go to Users/ -> copy post id -> go to this path
-
-// router.get('/comments/:id', getComment)
-
-// router.post('/comments', restrict, createComment)
-
 router.put('/comments/:id', restrict, updateComment)
-
-// router.delete('/comments/:id', restrict, deleteComment)
 
 
 export default router
