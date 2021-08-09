@@ -25,8 +25,8 @@ export default function Home() {
     <div className="theStory">
       <div className="Homebg">
         <div className="image-area">
-        <h1 className="slogan">We are doctors but not of the medical variety</h1>
-            <img className="codeDoctor" src="https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=900&h=500&fit=crop" alt="doctors"/>
+        <h1 className="slogan">A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community</h1>
+            {/* <img className="codeDoctor" src="https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=900&h=500&fit=crop" alt="doctors"/> */}
         </div>
       </div>
       </div>
