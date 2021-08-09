@@ -70,36 +70,36 @@
   margin-top: 20px;
 }
   */
- 
-div.theStory{
-  height: 80vh; 
+
+div.theStory {
+  height: 80vh;
   width: 100vw;
   background: 0 0;
   position: relative;
   grid-area: header;
 }
 
-div.Homebg{
+div.Homebg {
   position: absolute;
   z-index: 0;
   overflow: hidden;
   top: 0;
   bottom: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   height: 100vh;
   grid-area: header;
 }
 
-div.image-area{
+div.image-area {
   position: absolute;
   top: 75px;
   bottom: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
   background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/module/programmer.jpg");
   grid-area: header;
@@ -107,7 +107,7 @@ div.image-area{
   background-position: center;
 }
 
-img.codeDoctor{
+img.codeDoctor {
   object-fit: cover;
   width: 70vw;
   height: 70vh;
@@ -116,29 +116,27 @@ img.codeDoctor{
   grid-area: header;
 }
 
-div.body{
+div.body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   font-size: 10px;
   height: 100vh;
-  background: black ;
-   
+  background: black;
+
   grid-template-areas:
-  "header header header header"
-  "CTA CTA CTA CTA"
-  ;
+    "header header header header"
+    "CTA CTA CTA CTA";
 }
 
-h1.slogan{
-  
+h1.slogan {
   color: #000;
   font-size: 1.25rem;
   grid-area: header;
   margin-top: 0;
 }
 
-.slogan-area{
+.slogan-area {
   position: absolute;
   top: 40%;
   left: 72%; 
@@ -148,11 +146,9 @@ h1.slogan{
   height: 53vh;
   border-radius: 12px;
   background: white;
-
 }
 
-
-.BTN{
+.BTN {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,19 +162,19 @@ button.b1{
         color: white;
 }
 
-button.b1:hover{
+button.b1:hover {
   cursor: pointer;
 }
 
-button.b1:active{
+button.b1:active {
   opacity: 0.7;
 }
 
-p.para{
-  font-size:1rem;
+p.para {
+  font-size: 1rem;
 }
 
-p.para1{
+p.para1 {
   font-size: 1rem;
 }
 
@@ -250,3 +246,4 @@ h1.slogan{
   font-size: large;
 }
 }
+

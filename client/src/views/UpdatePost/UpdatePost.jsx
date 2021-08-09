@@ -40,12 +40,10 @@ export default function UpdatePost(props) {
     <Layout user={props.user} setUser={props.setUser}>
       <div>
         <form onSubmit={handleSubmit}>
-          <label>Title</label>
-          <br />
+          <h3 id='update-title-label'>Title</h3>
           <input className='update-title' placeholder={post.title} id="title" value={input.title} onChange={handleChange} />
           <br />
-          <label>Paste Your Code Here</label>
-          <br />
+          <h3 id='update-content-label'>Paste Your Code Here</h3>
           <textarea className='update-content' placeholder={post.content} id="content" value={input.content} onChange={handleChange} />
           <br />
           <button id='update-button'>Submit</button>
