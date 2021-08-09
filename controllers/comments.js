@@ -13,7 +13,6 @@ export const getAllComments = async (req, res) => {
 
 export const createComment = async (req, res) => {
   try {
-    //Makes new comment
     const comment = new Comment(req.body)
     comment.userId = req.user
     await comment.save()

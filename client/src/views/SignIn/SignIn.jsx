@@ -126,46 +126,38 @@ export default function SignIn(props) {
       />
       <div className="authform">
         <h1>Login</h1>
-      
         <form onSubmit={handleSubmit}>
-
         <div className="text-area">
-        <span></span>
-        <label>Email</label>
-            <input
-          className="email"
-          id="email"
-          type="email"
-          value={input.email}
-          onChange={handleInput}
-            required={true}
-        />
-         </div>
-          <div className="text-area">
-            <span></span>
-        <label>  Password</label>
-            <input
-            className="password"
-            id="password"
-            type="password"
-            value={input.password}
+          <h2 className='sign-in-title'>Email</h2>
+          <input
+            className="email"
+            id="email"
+            type="email"
+            value={input.email}
             onChange={handleInput}
             required={true}
+          />
+        </div>
+          <div className="text-area">
+            <h2 className='sign-in-title' id='title-password'>Password</h2>
+            <input
+              className="password"
+              id="password"
+              type="password"
+              value={input.password}
+              onChange={handleInput}
+              required={true}
             />
-          </div>  
-            
+          </div>   
           <button className="login">Login</button>
-
           <Link to="/sign-up">
           <div className="Sign-up">
             <button className="Not">Don't Have an Account Yet?</button>
           </div>
           </Link>
-           
         </form>
-       
       </div>
-      </div>
+    </div>
       
     </Layout>
   );

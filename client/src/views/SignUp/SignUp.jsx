@@ -13,7 +13,7 @@ export default function SignUp(props) {
     e.preventDefault();
     const user = await signUp(input);
     props.setUser(user);
-    history.push(`/user/${user.id}`);
+    history.push('/posts');
   };
 
   const handleInput = (e) => {
@@ -23,6 +23,7 @@ export default function SignUp(props) {
       [id]: value,
     }));
   };
+
   return (
     <Layout>
       <div className="background">
@@ -130,7 +131,7 @@ export default function SignUp(props) {
             
             <div className="text-field">
             <span></span>
-            <label>Username</label>
+            <h2 className='sign-up-title' id='title-username'>Username</h2>
         
             <input
             id="username"
@@ -142,7 +143,7 @@ export default function SignUp(props) {
 
             <div className="text-field">
             <span></span>
-            <label>Email</label>
+            <h2 className='sign-up-title'>Email</h2>
         
             <input
             id="email"
@@ -154,7 +155,7 @@ export default function SignUp(props) {
 
             <div className="text-field">
               <span></span>
-            <label>Password</label>
+              <h2 className='sign-up-title' id='title-password'>Password</h2>
         
             <input
             id="password"
@@ -163,11 +164,7 @@ export default function SignUp(props) {
             onChange={handleInput}
               />
             </div>
-            
-            <Link to="/user/:id">
             <button className="signup-button">Create Account</button>
-            </Link>
-            
             <Link to="/sign-in">
             <button className="already-button">Already a Member?</button>
             </Link>
