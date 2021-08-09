@@ -13,7 +13,6 @@ export const getAllComments = async (req, res) => {
 
 export const createComment = async (req, res) => {
   try {
-    //Makes new comment
     const comment = new Comment(req.body)
     comment.userId = req.user
     await comment.save()
@@ -43,16 +42,16 @@ export const getComment = async (req, res) => {
   }
 }
 
-export const updateComment = async (req, res) => {
-  try {
-    const { id } = req.params
-    const { body } = req
-    const updatedComment = await Comment.findByIdAndUpdate(id, body, { new: true })
-    res.send(updatedComment)
-  } catch (e) {
-    res.status(424).json({ error: e.message })
-  }
-}
+// export const updateComment = async (req, res) => {
+//   try {
+//     const { id } = req.params
+//     const { body } = req
+//     const updatedComment = await Comment.findByIdAndUpdate(id, body, { new: true })
+//     res.send(updatedComment)
+//   } catch (e) {
+//     res.status(424).json({ error: e.message })
+//   }
+// }
 
 export const deleteComment = async (req, res) => {
   try {

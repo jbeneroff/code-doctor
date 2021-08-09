@@ -3,7 +3,6 @@ import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
 
-
 export default function AboutUs(props) {
   return (
     <Layout user={props.user} setUser={props.setUser}>
