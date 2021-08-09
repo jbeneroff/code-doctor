@@ -41,14 +41,14 @@ export default function PostDetails(props) {
     if (post.userId === props.user?.id)
       return (
         <Link id='edit' to={`/update-post/${post._id}`}>
-          <button>Edit</button>
+          <button id='edit-post'>Edit</button>
         </Link>
       )
   }
 
   const displayDelete = (post) => {
     if (post.userId === props.user?.id)
-      return <button id='delete-post' onClick={handleDelete}>Delete Post</button>
+      return <button id='delete-post' onClick={handleDelete}>Delete</button>
   }
 
   const handleDelete = async () => {
@@ -84,7 +84,7 @@ export default function PostDetails(props) {
         {comments.map((comment, key) => {
           const displayDeleteComment = (comment) => {
             if (props.user?.id === comment.userId._id) {
-              return <button id='delete-comment' onClick={handleDeleteComment}>Delete Comment</button>
+              return <button id='delete-comment' onClick={handleDeleteComment}>Delete</button>
             }
           }
           const handleDeleteComment = async () => {

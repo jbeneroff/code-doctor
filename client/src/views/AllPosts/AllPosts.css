@@ -10,7 +10,7 @@
 
 .searchbar {
   border: 0px dotted black;
-  margin-bottom: 15px;
+  margin: 20px 0px;
 }
 
 .postarea {
@@ -18,7 +18,7 @@
   background-color: #f1f1f1;
   border-radius: 12px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 .postarea::after {
@@ -30,6 +30,7 @@
 .time {
   float: left;
   color: #aaa;
+  margin-bottom: 0px;
 }
 
 .post-title {
@@ -38,4 +39,10 @@
 
 .post-link {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .postarea {
+    margin: 30px 120px;
+  }
 }
