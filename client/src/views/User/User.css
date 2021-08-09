@@ -1,0 +1,26 @@
+.postarea {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.postarea::after {
+  content: "";
+  clear: left;
+  display: flex;
+}
+
+.time {
+  float: left;
+  color: #aaa;
+}
+
+.post-title {
+  color: black;
+}
+
+.post-link {
+  text-decoration: none;
+}

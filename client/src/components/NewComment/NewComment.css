@@ -1,0 +1,31 @@
+.new-comment-content {
+  width: 80%;
+  padding: 3px;
+  height: 100px;
+}
+
+#new-comment {
+  border: none;
+}
+
+#add-comment-header {
+  margin-bottom: 2px;
+}
+
+#submit-comment {
+  font-size: 12px;
+  background-color: #147594;
+  border: #6ea1b1 1px solid;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 1px;
+  width: 12%;
+  margin-bottom: 1px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .new-comment-content {
+    max-width: 59%;
+  }
+}

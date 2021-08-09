@@ -1,0 +1,144 @@
+.Nav {
+  --gradient: linear-gradient(0deg, #bdc3c7, #2c3e50);
+}
+
+.header {
+  /* background: linear-gradient(-45deg,#2193b0,#6dd5ed,#cc2b5e, #753a88 ); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: 300%;
+  padding: 5px 10px;
+  /* border: 3px solid #000; */
+  position: relative;
+  animation: change 10s;
+  box-sizing: border-box;
+  background-image: var(--gradient);
+  animation: change 10s infinite ease-in-out forwards;
+}
+
+.header-right a {
+  /* //float: left; */
+  /* color: black; */
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 5px;
+  border-radius: 4px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /*Find a better font like lato or something - look up typography pairs*/
+  letter-spacing: 2px;
+}
+
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.header-right a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 5px;
+}
+
+.header-right a:active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 5px;
+}
+
+.btn:active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: none;
+}
+
+div.Logo {
+  margin-top: 0;
+}
+
+div.header > div > div:nth-child(1) {
+  display: flex;
+  margin: center;
+}
+
+.btn {
+  background-color: inherit;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /*Change to another font - Impact is a placeholder*/
+  letter-spacing: 2px;
+  padding: 12px;
+}
+
+div.header > div:nth-child(2) > a:active {
+  background-color: dodgerblue;
+}
+
+div.Nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/*Media Query Section*/
+
+@media screen and (max-width: 768px) {
+  .header a {
+    float: none;
+    text-align: left;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .header-right a,
+  .btn {
+    font-size: 12px;
+    padding: 2px 5px;
+  }
+
+  div.header > div:nth-child(2) > a:active {
+    background-color: dodgerblue;
+  }
+
+  div.header > a.logo {
+    font-size: 18px;
+  }
+
+  .header-right a:hover,
+  .btn:hover {
+    padding: 2px 5px;
+  }
+}
