@@ -70,36 +70,36 @@
   margin-top: 20px;
 }
   */
- 
-div.theStory{
-  height: 80vh; 
+
+div.theStory {
+  height: 80vh;
   width: 100vw;
   background: 0 0;
   position: relative;
   grid-area: header;
 }
 
-div.Homebg{
+div.Homebg {
   position: absolute;
   z-index: 0;
   overflow: hidden;
   top: 0;
   bottom: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   height: 100vh;
   grid-area: header;
 }
 
-div.image-area{
+div.image-area {
   position: absolute;
   top: 75px;
   bottom: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
   background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/module/programmer.jpg");
   grid-area: header;
@@ -107,7 +107,7 @@ div.image-area{
   background-position: center;
 }
 
-img.codeDoctor{
+img.codeDoctor {
   object-fit: cover;
   width: 70vw;
   height: 70vh;
@@ -116,41 +116,38 @@ img.codeDoctor{
   grid-area: header;
 }
 
-div.body{
+div.body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   font-size: 10px;
   height: 100vh;
-  background: black ;
-   
+  background: black;
+
   grid-template-areas:
-  "header header header header"
-  "CTA CTA CTA CTA"
-  ;
+    "header header header header"
+    "CTA CTA CTA CTA";
 }
 
-h1.slogan{
-  
+h1.slogan {
   color: #000;
   font-size: 1.25rem;
   grid-area: header;
   margin-top: 0;
 }
 
-.slogan-area{
+.slogan-area {
   position: absolute;
   top: 40%;
-  left: 82%; 
+  left: 82%;
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 30%;
   height: 53vh;
   border-radius: 12px;
-  background: linear-gradient(0deg, #085078, #85D8CE)
-
+  background: linear-gradient(0deg, #085078, #85d8ce);
 }
-.content{
+.content {
   height: 40vh;
   width: 100%;
   background-color: linear-gradient(90deg, #bdc3c7, #2c3e50);
@@ -159,15 +156,15 @@ h1.slogan{
   font-size: 2rem;
 }
 
-.img1{
+.img1 {
   height: 40vh;
   width: 100%;
   background-color: red;
   grid-area: img1;
 }
 
-.content1{
-  height: 40vh; 
+.content1 {
+  height: 40vh;
   width: 100%;
   background: linear-gradient(90deg, #2c3e50, #bdc3c7);
   grid-area: content1;
@@ -175,92 +172,89 @@ h1.slogan{
   color: white;
 }
 
-.img2{
+.img2 {
   height: 40vh;
   width: 100%;
   background-color: orange;
   grid-area: img2;
 }
 
-.CTA{
+.CTA {
   height: 20vh;
   width: 100%;
-  background: linear-gradient(180deg,#bdc3c7, #2c3e50);
+  background: linear-gradient(180deg, #bdc3c7, #2c3e50);
 
   grid-area: CTA;
 }
 
-img.coders{
-  object-fit: cover;
-  height:40vh;
-}
-
-img.owners{
+img.coders {
   object-fit: cover;
   height: 40vh;
 }
 
-.BTN{
+img.owners {
+  object-fit: cover;
+  height: 40vh;
+}
+
+.BTN {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-button.b3{
-  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+button.b3 {
+  background: linear-gradient(146deg, #bdc3c7, #2c3e50);
   border: none;
   border-radius: 6px;
   padding: 5px 20px;
   color: white;
 }
 
-button.b3:hover{
-  cursor:pointer; 
+button.b3:hover {
+  cursor: pointer;
 }
 
-button.b3:active{
+button.b3:active {
   opacity: 0.7;
 }
 
-button.b2{
-  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+button.b2 {
+  background: linear-gradient(146deg, #bdc3c7, #2c3e50);
   border: none;
   border-radius: 6px;
   padding: 5px 20px;
   color: white;
-  
 }
 
-button.b2:hover{
+button.b2:hover {
   cursor: pointer;
 }
 
-button.b2:active{
+button.b2:active {
   opacity: 0.7;
 }
 
-button.b1{
-  background: linear-gradient(
-    45deg
-    , #bdc3c7, #2c3e50);
-        border: none;
-        border-radius: 6px;
-        padding: 5px 20px;
-        color: white;
+button.b1 {
+  background: linear-gradient(45deg, #bdc3c7, #2c3e50);
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: white;
 }
 
-button.b1:hover{
+button.b1:hover {
   cursor: pointer;
 }
 
-button.b1:active{
+button.b1:active {
   opacity: 0.7;
 }
 
-p.para{
-  font-size:1rem;
+p.para {
+  font-size: 1rem;
 }
 
-p.para1{
+p.para1 {
   font-size: 1rem;
 }
