@@ -155,9 +155,7 @@ export default function SignIn(props) {
             />
           </div>  
             
-        <Link to="/user/:id">
           <button className="login">Login</button>
-          </Link>
 
           <Link to="/sign-up">
           <div className="Sign-up">

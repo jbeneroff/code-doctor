@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./Home.css"
-import doctor from '../../../public/doctor.jpg'
+// import doctor from '../../../public/doctor.jpg'
 
 
 
