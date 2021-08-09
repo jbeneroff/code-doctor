@@ -87,6 +87,7 @@ div.Homebg{
   bottom: 0;
   right: 0; 
   left: 0;
+  height: 100vh;
   grid-area: header;
 }
 
@@ -100,7 +101,7 @@ div.image-area{
   width: 100%;
   background-color:rgba(0,0,0,0.5);
   z-index: 0;
-  background-image: url("https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=900&h=500&fit=crop");
+  background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/module/programmer.jpg");
   grid-area: header;
   background-size: cover;
   background-position: center;
@@ -131,20 +132,20 @@ div.body{
 
 h1.slogan{
   
-  color: white;
-  font-size: 2rem;
+  color: #000;
+  font-size: 1.25rem;
   grid-area: header;
-  
+  margin-top: 0;
 }
 
 .slogan-area{
   position: absolute;
-  top: 36%;
-  left: 50%; 
+  top: 40%;
+  left: 82%; 
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 30%;
-  height: 20vh;
+  height: 53vh;
   border-radius: 12px;
   background: linear-gradient(0deg, #085078, #85D8CE)
 
@@ -201,5 +202,65 @@ img.owners{
 
 .BTN{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+button.b3{
+  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: white;
+}
+
+button.b3:hover{
+  cursor:pointer; 
+}
+
+button.b3:active{
+  opacity: 0.7;
+}
+
+button.b2{
+  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: white;
+  
+}
+
+button.b2:hover{
+  cursor: pointer;
+}
+
+button.b2:active{
+  opacity: 0.7;
+}
+
+button.b1{
+  background: linear-gradient(
+    45deg
+    , #bdc3c7, #2c3e50);
+        border: none;
+        border-radius: 6px;
+        padding: 5px 20px;
+        color: white;
+}
+
+button.b1:hover{
+  cursor: pointer;
+}
+
+button.b1:active{
+  opacity: 0.7;
+}
+
+p.para{
+  font-size:1rem;
+}
+
+p.para1{
+  font-size: 1rem;
 }
