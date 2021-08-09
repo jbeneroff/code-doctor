@@ -42,15 +42,13 @@ export default function NewPost(props) {
 
       <form onSubmit={handleSubmit}>
 
-        <label>Title</label>
-        <br/>
+        <h3 id='new-title-label' >Title</h3>
         <input className='title' id="title" value={input.title} onChange={handleChange} />
         <br/>
-        <label>Paste Your Code Here</label>
-        <br/>
+        <h3 id='new-content-label'>Paste Your Code Here</h3>
         <textarea className='new-post-content' id="content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
-        <button>Submit</button>
+        <button id='new-button'>Submit</button>
 
       </form>
     </Layout>

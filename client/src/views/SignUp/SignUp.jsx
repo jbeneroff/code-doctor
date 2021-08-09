@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import Layout from "../../components/Layout/Layout"
 import { signUp } from "../../services/users.js"
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import "./SignUp.css"
 import Particles from 'react-particles-js';
 
@@ -12,9 +12,8 @@ export default function SignUp(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const user = await signUp(input);
-    console.log(user);
     props.setUser(user);
-    history.push(`/user/${user.id}`);
+    history.push('/posts');
   };
 
   const handleInput = (e) => {
@@ -24,6 +23,7 @@ export default function SignUp(props) {
       [id]: value,
     }));
   };
+
   return (
     <Layout>
       <div className="background">
@@ -126,53 +126,41 @@ export default function SignUp(props) {
       />
         <div className="auth-form">
           <h1>Sign Up</h1>
-
           <form onSubmit={handleSubmit}>
             <div className="text-field">
-            <span></span>
-        <label>Username</label>
-        
-        <input
-          id="username"
-          type="text"
-          value={input.username}
-          onChange={handleInput}
-        />
-            </div>
-            <div className="text-field">
-            <span></span>
-        <label>Email</label>
-        
-        <input
-          id="email"
-          type="email"
-          value={input.email}
-          onChange={handleInput}
+              <h2 className='sign-up-title' id='title-username'>Username</h2>
+              <input
+                id="username"
+                type="text"
+                value={input.username}
+                onChange={handleInput}
               />
             </div>
             <div className="text-field">
-              <span></span>
-       
-        <label>Password</label>
-        
-        <input
-          id="password"
-          type="password"
-          value={input.password}
-          onChange={handleInput}
+              <h2 className='sign-up-title'>Email</h2>
+              <input
+                id="email"
+                type="email"
+                value={input.email}
+                onChange={handleInput}
               />
             </div>
-            
+            <div className="text-field">
+              <h2 className='sign-up-title' id='title-password'>Password</h2>
+              <input
+                id="password"
+                type="password"
+                value={input.password}
+                onChange={handleInput}
+              />
+            </div>
             <button className="signup-button">Create Account</button>
-
-            <button className="already-button">Already a Member?</button>
-            
+            <Link to="/sign-in">
+              <button className="already-button">Already a Member?</button>
+            </Link> 
           </form>
-
-        </div>
-        
+        </div> 
       </div>
-      
     </Layout>
   );
 }
