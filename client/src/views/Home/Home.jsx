@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./Home.css"
-import doctor from '../../../public/doctor.jpg'
+
 
 
 
@@ -29,7 +29,7 @@ export default function Home() {
     // <div className="theStory">
     //   <div className="Homebg">
     //     <div className="image-area">
-    //       <img className="codeDoctor" src={doctor}/>
+    //       <img className="codeDoctor" src={require()}/>
     //     </div>
 
     //   </div>
