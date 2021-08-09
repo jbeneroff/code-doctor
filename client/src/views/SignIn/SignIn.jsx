@@ -48,7 +48,7 @@ export default function SignIn(props) {
          </div>
           <div className="text-area">
             <span></span>
-        <label>Password</label>
+        <label>  Password</label>
             <input
             className="password"
             id="password"
@@ -57,13 +57,11 @@ export default function SignIn(props) {
             onChange={handleInput}
             required={true}
             />
-          </div>
-          
-            <div className="pass">Forgot Password?</div>
+          </div>  
             
-            
-        
+        <Link to="/user/:id">
           <button className="login">Login</button>
+          </Link>
 
           <Link to="/sign-up">
           <div className="Sign-up">
