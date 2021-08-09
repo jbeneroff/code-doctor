@@ -28,10 +28,11 @@ export default function Home() {
      <div className="body">
     <div className="theStory">
       <div className="Homebg">
-        <div className="image-area">
-        <h1 className="slogan">We are doctors but not of the medical variety</h1>
-            <img className="codeDoctor" src="https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=900&h=500&fit=crop" alt="doctors"/>
+          <div className="image-area">
+            <div className="slogan-area">
+        <h1 className="slogan">We turn 404s into 200s again </h1>
         </div>
+            </div>
       </div>
       </div>
       
@@ -54,13 +55,13 @@ export default function Home() {
       </div> */}
 
       <div className="CTA">
-        Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.
+        <p>Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.</p>
         <br/>
            <Link to="/posts">
          <button className="b1">See Community Posts</button>
            </Link>
-           <h2>Do You Want to Start Sharing Your Code?</h2>
-        <h4>Create an Account & Get Started!</h4>
+           <h2 className="CTAH2">Do You Want to Start Sharing Your Code?</h2>
+        <h4 className="CTACA">Create an Account & Get Started!</h4>
         <div className="BTN">
            <Link to="/sign-up">
             <button className="b2">Sign Up</button>
