@@ -10,7 +10,7 @@ const api = axios.create({
   baseURL:
     process.env.NODE_ENV === 'production'
       //REPLACE WITH HEROKU API ONCE DEPLOYED
-      ? null
+      ? "https://code-doctor-api.herokuapp.com/api"
       : "http://localhost:4567/api",
 });
 
