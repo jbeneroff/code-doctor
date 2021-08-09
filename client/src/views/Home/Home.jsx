@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import "./Home.css"
+
 import Navbar from '../../components/Navbar/Navbar'
+
 export default function Home() {
   return (
     
@@ -72,6 +74,7 @@ export default function Home() {
       <img className="owners" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpftHNILHez9wYrHFa3qFE1mvc-20sWDYBfwqHipSUTfkuMlhdl3EzNPQIsxO4QSyd1Y&usqp=CAU" alt="owners?"/>
       </div> */}
         {/* <div className="CTA">
+
            <Link to="/posts">
          <button className="b1">See Community Posts</button>
            </Link>

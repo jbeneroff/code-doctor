@@ -5,14 +5,14 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export default function ProfileCard(props) {
   return (
-    <div className="profile popup">
+    <div className="profile-card">
       <img src={props.src} alt={props.alt} />
-      <h1>{props.name}</h1>
+      <h1 className="name">{props.name}</h1>
       <p className="title">{props.jobTitle}</p>
       <p>{props.currentEmployer}</p>
-      <a className="link gh" href={props.GH}><FontAwesomeIcon icon={faGithub}/></a>
-      <a className="link li" href={props.LI}><FontAwesomeIcon icon={faLinkedin} /></a>
-      <p><button className="email-btn"><a href={props.email}target="_blank" rel="noreferrer">Contact Me</a></button></p>
+      <a className="link" href={props.GH}><FontAwesomeIcon icon={faGithub} /></a>
+      <a className="link" href={props.LI}><FontAwesomeIcon icon={faLinkedin} /></a>
+      <p><button className="email-btn"><a className="contact" href={props.email} target="_blank" rel="noreferrer">Contact Me</a></button></p>
     </div>
   )
 }

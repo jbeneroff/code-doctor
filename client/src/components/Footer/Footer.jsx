@@ -3,8 +3,7 @@ import "./Footer.css"
 
 export default function Footer() {
   return (
-    <div className="Footer">
-      Copyright 2021 Ziyad, Jared, Kheyyon, & Stefanie
+    <div className="Footer">© 2021 Ziyad, Jared, Kheyyon, and Stefanie
     </div>
   )
 }
