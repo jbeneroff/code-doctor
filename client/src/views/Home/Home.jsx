@@ -38,11 +38,11 @@ export default function Home() {
         <h4>Create an Account & Get Started!</h4>
         <div className="BTN">
            <Link to="/sign-up">
-            <button className="b2">Sign Up</button>
+            <button className="b1">Sign Up</button>
        </Link>
        <p className="para">OR</p>
        <Link to="/sign-in">
-            <button className="b3">Sign In</button>
+            <button className="b1">Sign In</button>
                 </Link>
           
               <br />

@@ -264,3 +264,66 @@ p.para{
 p.para1{
   font-size: 1rem;
 }
+
+@media screen and (max-width: 786px) {
+div.body{
+  font-size: 5px;
+}
+  p.para{
+   font-size: 0.5rem;
+ }
+ 
+ p.para1{
+  font-size: 0.5rem;
+}
+
+.BTN{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+button.b1{
+  background: linear-gradient(
+    45deg
+    , #bdc3c7, #2c3e50);
+        border: none;
+        border-radius: 6px;
+        padding: 0 5px;
+        color: white;
+        font-size: xx-small;
+}
+
+button.b1:hover{
+  cursor: pointer;
+}
+
+button.b1:active{
+  opacity: 0.7;
+}
+
+.slogan-area{
+  position: absolute;
+  top: 40%;
+  left: 82%; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 30%;
+  height: 33vh;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #085078, #85D8CE);
+  font-size: 5px;
+  width: 75vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1.slogan{
+  
+  color: #000;
+  font-size: 0.625rem;
+  grid-area: header;
+  margin-top: 0;
+}
+}
