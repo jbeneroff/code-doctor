@@ -6,23 +6,23 @@
 }
 .authform {
   position:absolute;
-  top: 67%;
-  left: 50%;
+  top: 67%; 
+  left: 50%; 
   transform: translate(-50%, -50%);
   width: 600px;
   height: 700px;
   background: white;
   border-radius: 10px;
   border-color: 2px solid black;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   padding: 0;
   font-family: montserrat;
-  
 }
 .authform h1 {
   text-align: center;
   padding: 0 0 20px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid lightblue;
+  color: darkblue
 }
 .authform form {
   padding: 0 40px;
@@ -36,7 +36,7 @@
 }
 .text-area input {
   width: 100%;
-  padding: 5px 40px;
+  padding: 30px 40px 0px 0px;
   height: 40px;
   font-size: 16px;
   border: none;
@@ -46,7 +46,7 @@
 .text-area label {
   position: absolute;
   top: 0px;
-  left: 20px;
+  left: 10px;
   color: black;
   transform: translate(-50%);
   font-size: 16px;
@@ -63,22 +63,11 @@
   height: 2px;
   background: #2691D9;
 }
+
+
+
+
 .authform button {
-  font-size: 20px;
-  background-color:#147594 ;
-  border: #6EA1B1 1px solid;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 80px;
-  width: 60%;
-  margin-bottom: 10px;
-}
-
-
-.pass{
-  margin-top: 60px;
-}
-.login {
   background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
   border: none;
   border-radius: 21px;
@@ -86,25 +75,21 @@
   cursor: pointer;
   color: white;
   font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
+  height: 70px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 70px;
   transition: 0.25s;
-  width: 153px;
+  width: 220px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  
 }
+
 
 .Not {
-  background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #6dd5ed;
-  cursor: pointer;
-  color: white;
-  font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
-  margin: 0 auto;
-  margin-top: 50px;
-  transition: 0.25s;
-  width: 153px;
+  margin-bottom: 20px;
+  FONT-SIZE:17px;
 }
+
 

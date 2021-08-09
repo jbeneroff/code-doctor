@@ -36,7 +36,7 @@
 }
 .text-field input {
   width: 100%;
-  padding: 5px 40px;
+  padding: 40px 120px 0px 0px ;
   height: 40px;
   font-size: 16px;
   border: none;
@@ -63,45 +63,23 @@
   height: 2px;
   background: #2691D9;
 }
+
+
 .auth-form button {
+  background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
+  border: none;
+  border-radius: 21px;
+  box-shadow: 0px 1px 8px #6dd5ed;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 70px;
+  transition: 0.25s;
+  width: 220px;
+  margin-right: 20px;
+  margin-left: 20px;
   font-size: 20px;
-  background-color:#147594 ;
-  border: #6EA1B1 1px solid;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 80px;
-  width: 60%;
-  margin-bottom: 10px;
-}
-
-
-
-.signup-button {
-  background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #6dd5ed;
-  cursor: pointer;
-  color: white;
-  font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
-  margin: 0 auto;
-  margin-top: 10px;
-  transition: 0.25s;
-  width: 153px;
-}
-
-.already-button {
-  background: -webkit-linear-gradient(right, #2193b0, #6dd5ed);
-  border: none;
-  border-radius: 21px;
-  box-shadow: 0px 1px 8px #6dd5ed;
-  cursor: pointer;
-  color: white;
-  font-family: "Raleway SemiBold", sans-serif;
-  height: 42.3px;
-  margin: 0 auto;
-  margin-top: 10px;
-  transition: 0.25s;
-  width: 153px;
+  
 }

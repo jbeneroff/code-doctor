@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import Layout from "../../components/Layout/Layout"
 import { signUp } from "../../services/users.js"
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import "./SignUp.css"
 
 export default function SignUp(props) {
@@ -64,10 +64,13 @@ export default function SignUp(props) {
           onChange={handleInput}
               />
             </div>
-            
+            <Link to="/user/:id">
             <button className="signup-button">Create Account</button>
-
+            </Link>
+            
+            <Link to="/sign-in">
             <button className="already-button">Already a Member?</button>
+            </Link>
             
           </form>
 
