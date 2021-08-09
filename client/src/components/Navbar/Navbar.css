@@ -1,19 +1,20 @@
 
 .Nav {
   --gradient: linear-gradient(
-    -45deg,
-    #2193b0,
-    #6dd5ed,
-    #cc2b5e, 
-    #753a88 
+    0deg,
+   #bdc3c7, 
+   #2c3e50
   );
 }
 
 .header {
   /* background: linear-gradient(-45deg,#2193b0,#6dd5ed,#cc2b5e, #753a88 ); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-size: 300%;
-  padding: 30px 10px;
-  border: 3px solid #000;
+  padding: 5px 10px;
+  /* border: 3px solid #000; */
   position: relative;
   animation: change 10s;
   box-sizing: border-box;
