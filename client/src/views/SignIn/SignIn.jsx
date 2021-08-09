@@ -13,7 +13,6 @@ export default function SignIn(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const user = await signIn(input);
-    console.log(user);
     setUser(user);
     history.push(`/user/${user.id}`);
   };
