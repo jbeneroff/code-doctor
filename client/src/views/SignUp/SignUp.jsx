@@ -125,56 +125,42 @@ export default function SignUp(props) {
         }}
       />
         <div className="auth-form">
-
-            <h1>Sign Up</h1>
+          <h1>Sign Up</h1>
           <form onSubmit={handleSubmit}>
-            
             <div className="text-field">
-            <span></span>
-            <h2 className='sign-up-title' id='title-username'>Username</h2>
-        
-            <input
-            id="username"
-            type="text"
-            value={input.username}
-            onChange={handleInput}
-            />
-            </div>
-
-            <div className="text-field">
-            <span></span>
-            <h2 className='sign-up-title'>Email</h2>
-        
-            <input
-            id="email"
-            type="email"
-            value={input.email}
-            onChange={handleInput}
+              <h2 className='sign-up-title' id='title-username'>Username</h2>
+              <input
+                id="username"
+                type="text"
+                value={input.username}
+                onChange={handleInput}
               />
             </div>
-
             <div className="text-field">
-              <span></span>
+              <h2 className='sign-up-title'>Email</h2>
+              <input
+                id="email"
+                type="email"
+                value={input.email}
+                onChange={handleInput}
+              />
+            </div>
+            <div className="text-field">
               <h2 className='sign-up-title' id='title-password'>Password</h2>
-        
-            <input
-            id="password"
-            type="password"
-            value={input.password}
-            onChange={handleInput}
+              <input
+                id="password"
+                type="password"
+                value={input.password}
+                onChange={handleInput}
               />
             </div>
             <button className="signup-button">Create Account</button>
             <Link to="/sign-in">
-            <button className="already-button">Already a Member?</button>
-            </Link>
-            
+              <button className="already-button">Already a Member?</button>
+            </Link> 
           </form>
-
-        </div>
-        
+        </div> 
       </div>
-      
     </Layout>
   );
 }
