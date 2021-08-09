@@ -4,6 +4,7 @@ import React from 'react'
 // import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import Layout from '../../components/Layout/Layout'
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
+
 export default function AboutUs(props) {
   return (
     <Layout user={props.user} setUset={props.setUser}>
@@ -150,9 +151,6 @@ export default function AboutUs(props) {
               </div>
               </div>
            </div>
-            
-           
-            
         </div>
         </div>
 
