@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import "./Home.css"
 
+import Navbar from '../../components/Navbar/Navbar'
+
 export default function Home() {
   return (
     
@@ -21,16 +23,39 @@ export default function Home() {
       //      <button className="b3">Sign In</button>
       //     </Link>
       // </div>
-     <div className="body">
+   
+  <div className="body">
     <div className="theStory">
-      <div className="Homebg">
-        <div className="image-area">
-        <h1 className="slogan">A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community</h1>
-            {/* <img className="codeDoctor" src="https://images.theconversation.com/files/59470/original/bmc3zndq-1411073854.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=900&h=500&fit=crop" alt="doctors"/> */}
-        </div>
-      </div>
-      </div>
+        <div className="Homebg">
+        <Navbar/>
+          <div className="image-area">
+            <div className="slogan-area">
       
+        <p className="para">Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.</p>
+              <p className="para1">See what's up in the code doctor community</p>
+              <Link to="/posts">
+         <button className="b1">See Community Posts</button>
+           </Link>
+           <h2>Do You Want to Start Sharing Your Code?</h2>
+        <h4>Create an Account & Get Started!</h4>
+        <div className="BTN">
+           <Link to="/sign-up">
+            <button className="b2">Sign Up</button>
+       </Link>
+       <p className="para">OR</p>
+       <Link to="/sign-in">
+            <button className="b3">Sign In</button>
+                </Link>
+          
+              <br />
+              <h1 className="slogan">We turn 404s into 200s again!</h1>
+              </div>    
+            </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  )
       {/* <div className="content">
         <h2 className="description">A Secure Platform for Web Developers to Post Code and Get Help from Others in the Community!</h2>
       
@@ -48,9 +73,8 @@ export default function Home() {
       <div className="img2">
       <img className="owners" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcpftHNILHez9wYrHFa3qFE1mvc-20sWDYBfwqHipSUTfkuMlhdl3EzNPQIsxO4QSyd1Y&usqp=CAU" alt="owners?"/>
       </div> */}
-      <div className="CTA">
-        Join a community of like-minded developers who have a unifying passion for for functional and D.R.Y. code.
-        <br/>
+        {/* <div className="CTA">
+
            <Link to="/posts">
          <button className="b1">See Community Posts</button>
            </Link>
@@ -60,12 +84,12 @@ export default function Home() {
            <Link to="/sign-up">
             <button className="b2">Sign Up</button>
        </Link>
-       <p>OR</p>
+       <p className="para">OR</p>
        <Link to="/sign-in">
             <button className="b3">Sign In</button>
           </Link>
           </div>
        </div>
-      </div>
-  )
+      </div> */}
+  
 }

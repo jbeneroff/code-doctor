@@ -87,6 +87,7 @@ div.Homebg{
   bottom: 0;
   right: 0; 
   left: 0;
+  height: 100vh;
   grid-area: header;
 }
 
@@ -96,11 +97,14 @@ div.image-area{
   bottom: 0;
   right: 0; 
   left: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
   background-color:rgba(0,0,0,0.5);
   z-index: 0;
+  background-image: url("https://cdn.seeklearning.com.au/media/images/career-guide/module/programmer.jpg");
   grid-area: header;
+  background-size: cover;
+  background-position: center;
 }
 
 img.codeDoctor{
@@ -118,11 +122,8 @@ div.body{
   grid-template-rows: auto;
   font-size: 10px;
   height: 100vh;
-  background: linear-gradient(
-    0deg,
-   #bdc3c7, 
-   #2c3e50
-  );
+  background: black ;
+   
   grid-template-areas:
   "header header header header"
   "CTA CTA CTA CTA"
@@ -130,16 +131,25 @@ div.body{
 }
 
 h1.slogan{
-  position: absolute;
-  top: 36%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  font-size: 4rem;
+  
+  color: #000;
+  font-size: 1.25rem;
   grid-area: header;
+  margin-top: 0;
 }
 
+.slogan-area{
+  position: absolute;
+  top: 40%;
+  left: 82%; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 30%;
+  height: 53vh;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #085078, #85D8CE)
+
+}
 .content{
   height: 40vh;
   width: 100%;
@@ -192,4 +202,65 @@ img.owners{
 
 .BTN{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button.b3{
+  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: white;
+}
+
+button.b3:hover{
+  cursor:pointer; 
+}
+
+button.b3:active{
+  opacity: 0.7;
+}
+
+button.b2{
+  background: linear-gradient(146deg,#bdc3c7,#2c3e50  );
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  color: white;
+  
+}
+
+button.b2:hover{
+  cursor: pointer;
+}
+
+button.b2:active{
+  opacity: 0.7;
+}
+
+button.b1{
+  background: linear-gradient(
+    45deg
+    , #bdc3c7, #2c3e50);
+        border: none;
+        border-radius: 6px;
+        padding: 5px 20px;
+        color: white;
+}
+
+button.b1:hover{
+  cursor: pointer;
+}
+
+button.b1:active{
+  opacity: 0.7;
+}
+
+p.para{
+  font-size:1rem;
+}
+
+p.para1{
+  font-size: 1rem;
 }
