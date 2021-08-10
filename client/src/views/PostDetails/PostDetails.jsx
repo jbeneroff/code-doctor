@@ -94,7 +94,7 @@ export default function PostDetails(props) {
           return (
             <div id='comment' key={comment._id}>
               <p id='commenter' >{comment.userId.username}</p>
-              <SyntaxHighLighter id='comment-content'  language="javascript" style={vs} customStyle={{ backgroundColor: 'rgb(238, 238, 238)' }}>
+              <SyntaxHighLighter id='comment-content'  language="javascript" style={vs} wrapLongLines={true} customStyle={{ backgroundColor: 'rgb(238, 238, 238)' }}>
                 {`${comment.content}`}
               </SyntaxHighLighter>
               <p className='timestamp' >{`Posted at ${comment.createdAt.slice(11, 16)} on ${comment.createdAt.slice(5, 10)}-${comment.createdAt.slice(0, 4)}`}</p>
