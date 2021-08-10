@@ -73,7 +73,6 @@ export default function PostDetails(props) {
             {`${post.content}`}
           </SyntaxHighLighter>
         </div>
-        {/* <p className='timestamp' >{`Posted at ${post.createdAt.slice(11, 16)} on ${post.createdAt.slice(5, 10)}-${post.createdAt.slice(0, 4)}`}</p> */}
         <br />
         {displayEditLink(post)}
         {displayDelete(post)}

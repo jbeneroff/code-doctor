@@ -20,7 +20,6 @@ export default function Navbar(props) {
         <div className="header-right">
           {props.user ? (
             <>
-              {/* <div>{props.user?.username}</div> */}
               <Link to="/posts">All Posts</Link>
               <Link to={`/user/${props.user.id}`}>User Profile</Link>
               <Link to="/new-post">Create New Post</Link>

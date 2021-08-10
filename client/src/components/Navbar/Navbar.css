@@ -3,13 +3,11 @@
 }
 
 .header {
-  /* background: linear-gradient(-45deg,#2193b0,#6dd5ed,#cc2b5e, #753a88 ); */
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-size: 300%;
   padding: 5px 10px;
-  /* border: 3px solid #000; */
   position: relative;
   animation: change 10s;
   box-sizing: border-box;
@@ -18,8 +16,6 @@
 }
 
 .header-right a {
-  /* //float: left; */
-  /* color: black; */
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -28,7 +24,6 @@
   border-radius: 4px;
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  /*Find a better font like lato or something - look up typography pairs*/
   letter-spacing: 2px;
 }
 
@@ -81,7 +76,6 @@ div.header > div > div:nth-child(1) {
   font-size: 14px;
   color: white;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  /*Change to another font - Impact is a placeholder*/
   letter-spacing: 2px;
   padding: 12px;
 }
@@ -108,8 +102,6 @@ div.Nav {
     background-position: 0 50%;
   }
 }
-
-/*Media Query Section*/
 
 @media screen and (max-width: 768px) {
   .header a {
