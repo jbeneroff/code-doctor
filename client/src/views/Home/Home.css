@@ -60,7 +60,7 @@ h1.slogan {
   color: #000;
   font-size: 1.25rem;
   grid-area: header;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .slogan-area {
@@ -105,13 +105,16 @@ p.para1 {
   font-size: 1rem;
 }
 
+.engage {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 786px) {
   div.body {
     font-size: 5px;
   }
   p.para {
     font-size: 1.2rem;
-    margin: 2px 2px;
   }
   p.para1 {
     font-size: 1.5rem;
@@ -159,7 +162,7 @@ p.para1 {
     color: #000;
     font-size: 1.5rem;
     grid-area: header;
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   .question {
@@ -167,7 +170,6 @@ p.para1 {
   }
 
   .engage {
-    font-size: large;
-    margin: 3px 3px;
+    font-size: 20px;
   }
 }
