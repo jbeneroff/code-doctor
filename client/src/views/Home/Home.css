@@ -114,10 +114,10 @@ p.para1 {
     font-size: 5px;
   }
   p.para {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
   }
   p.para1 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
   .BTN {
     display: flex;
@@ -160,7 +160,7 @@ p.para1 {
   }
   h1.slogan {
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     grid-area: header;
     margin-top: 5px;
   }
