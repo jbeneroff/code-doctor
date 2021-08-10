@@ -37,11 +37,8 @@ export default function NewPost(props) {
   return (
   
     <Layout user={props.user} setUser={props.setUser}>
-      
       <h1>Create New Post</h1>
-
       <form onSubmit={handleSubmit}>
-
         <h3 id='new-title-label' >Title</h3>
         <input className='title' id="title" value={input.title} onChange={handleChange} />
         <br/>
@@ -49,7 +46,6 @@ export default function NewPost(props) {
         <textarea className='new-post-content' id="content" value={input.content} placeholder="Use '//' for plain text." onChange={handleChange} onKeyDown={useTab}/>
         <br/>
         <button id='new-button'>Submit</button>
-
       </form>
     </Layout>
   )
