@@ -1,5 +1,6 @@
 # code-doctor
 
+https://codedoctor.netlify.app/
 
 ## Schemas
 User
@@ -120,13 +121,13 @@ A forum for all things coding/programming/development. Users can create accounts
 | Back End Models         |    H     |      3hrs      |     3hrs      |    3hrs     |
 | Back End Controllers          |    H     |      3hrs      |     3hrs     |    3hrs     |
 | Back End Routes         |    H     |      3hrs      |     3hrs    |    3hrs     |
-| CSS styling         |    H     |      6hrs      |     6hrs    |         |
+| CSS styling         |    H     |      6hrs      |     6hrs    |     10hrs    |
 | Media Queries        |    H     |      2hrs      |     1hrs    |    1hrs     |
 | Debugging        |    H     |      6hrs      |     6hrs    |    6hrs     |
 | PMVP code snippets         |    M     |      3hrs      |     1hrs      |    1hrs    |
 | PMVP Search bar         |    M     |      3hrs      |     1hrs     |     1hrs    |
-| PMVP voting system         |    M     |      3hrs      |         |         |
-| PMVP mark comments as answer         |    M     |      3hrs      |          |         |
+| PMVP voting system         |    M     |      3hrs      |    1hrs     |     1hrs    |
+| PMVP mark comments as answer         |    M     |      3hrs      |     0hrs     |     0hrs    |
 | Total |    H     |           |          |        |
 
 ## Weekly Breakdown
@@ -139,7 +140,7 @@ A forum for all things coding/programming/development. Users can create accounts
 | Aug 4   |  Coding/MVP                                               | Complete |
 | Aug 5    | MVP                                           | Complete |
 | Aug 6 | MVP/PMVP                                                 | Complete |
-| Aug 9    | PMVP                                       | Incomplete |
-| Aug 10    | Presentations                                        | Incomplete |
+| Aug 9    | PMVP                                       | Complete |
+| Aug 10    | Presentations                                        | Complete |
 
 [https://github.com/users/jbeneroff/projects/1]
