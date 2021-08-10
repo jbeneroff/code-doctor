@@ -69,7 +69,7 @@ export default function PostDetails(props) {
         <p id='username' >{user?.username}</p>
         <hr />
         <div id='code'>
-          <SyntaxHighLighter id='post-content' language="javascript" style={vs} customStyle={{ backgroundColor: 'rgb(238, 238, 238)'}}>
+          <SyntaxHighLighter id='post-content' language="javascript" style={vs} wrapLongLines={true} customStyle={{ backgroundColor: 'rgb(238, 238, 238)'}}>
             {`${post.content}`}
           </SyntaxHighLighter>
         </div>
