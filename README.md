@@ -1,6 +1,9 @@
 # code-doctor
 
-https://codedoctor.netlify.app/
+https://codedoctor.netlify.app/[Code Doctor]
+
+## Overview
+A forum for all things coding/programming/development. Users can create accounts, create posts with their coding questions, and reply to other users' posts with comments/answers. The goal is to empower a community of developers of all levels to share knowledge and receive feedback.
 
 ## Schemas
 User
@@ -43,8 +46,6 @@ https://whimsical.com/MDUmac39tzhHxfgXzog9ra
 
 https://docs.google.com/document/d/1jy-tOdlzclQPYQr4zjqm0O3nZxDCwMjsFNJab7kv8uU/edit
 
-## Overview
-A forum for all things coding/programming/development. Users can create accounts, create posts with their coding questions, and reply to other users' posts with comments/answers. The goal is to empower a community of developers of all levels to share knowledge and receive feedback.
 
 ## MVP
 - Front End: React App, CRUD for posts and comments, sign-in/sign-up/sign-out for users.
