@@ -70,9 +70,13 @@ h1.slogan {
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 50%;
-  height: 53vh;
+  /* height: 35%; */
   border-radius: 12px;
-  background: white;
+  background: linear-gradient(0deg, #bdc3c7e3, #3c556de9);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 10px;
 }
 
 .BTN {
@@ -99,6 +103,7 @@ button.b1:active {
 
 p.para {
   font-size: 1rem;
+  color: white;
 }
 
 p.para1 {
@@ -107,6 +112,7 @@ p.para1 {
 
 .engage {
   font-size: 20px;
+  color: white;
 }
 
 @media screen and (max-width: 786px) {
@@ -149,9 +155,9 @@ p.para1 {
     transform: translate(-50%, -50%);
     z-index: 1;
     width: 30%;
-    height: 65vh;
+    /* height: 60vh; */
     border-radius: 12px;
-    background: white;
+    /* background: white; */
     font-size: 5px;
     width: 75vw;
     top: 50%;
